@@ -230,17 +230,6 @@ You can always find the latest version at:
 
 ---
 
-## Open Source Transparency
-
-Spark's source code is available on GitHub:
-
-- **Repository:** [https://github.com/logreg-n-coffee/spark](https://github.com/logreg-n-coffee/spark)
-- **License:** MIT
-
-You can verify our privacy claims by reviewing the source code yourself.
-
----
-
 ## Contact Us
 
 If you have questions about this privacy policy or Spark's data practices:
@@ -273,7 +262,6 @@ This privacy policy complies with:
 - We can't see your history, favorites, or usage
 - Purchases are handled by Apple
 - Premium content is delivered via CDN
-- You can verify this in our open-source code
 
 **Questions?** Contact us anytime.
 

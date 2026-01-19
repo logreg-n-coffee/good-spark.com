@@ -280,7 +280,7 @@ All dependencies are up-to-date and production-ready.
 
 ## License
 
-MIT License - Open source, free to use and modify
+All rights reserved. Proprietary software.
 
 ---
 

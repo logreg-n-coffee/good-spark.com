@@ -39,7 +39,7 @@ export default function PrivacyPolicy() {
           </div>
           <p className="text-gray-400 text-sm mb-4">Daily affirmations, instant spark.</p>
           <p className="text-gray-500 text-sm">
-            &copy; 2026 Spark. Built with love using SwiftUI. Open source under MIT License.
+            &copy; 2026 Spark. Built with love using SwiftUI.
           </p>
         </div>
       </footer>
