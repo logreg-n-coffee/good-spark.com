@@ -7,9 +7,9 @@ export const metadata: Metadata = {
 
 export default function PrivacyPolicy() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white dark:bg-gray-900">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md border-b border-gray-200 z-50">
+      <nav className="fixed top-0 w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <a href="/" className="flex items-center space-x-2">
@@ -20,7 +20,7 @@ export default function PrivacyPolicy() {
             </a>
             <a
               href="/"
-              className="text-gray-700 hover:text-purple-600 transition"
+              className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition"
             >
               Back to Home
             </a>
@@ -30,23 +30,23 @@ export default function PrivacyPolicy() {
 
       {/* Content */}
       <div className="pt-24 pb-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto prose prose-lg">
+        <div className="max-w-4xl mx-auto prose prose-lg dark:prose-invert prose-headings:text-gray-900 dark:prose-headings:text-white prose-p:text-gray-700 dark:prose-p:text-gray-300 prose-li:text-gray-700 dark:prose-li:text-gray-300 prose-a:text-purple-600 dark:prose-a:text-purple-400 prose-strong:text-gray-900 dark:prose-strong:text-white prose-code:text-gray-800 dark:prose-code:text-gray-200">
           <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
             Privacy Policy for Spark
           </h1>
-          <p className="text-gray-500 mb-8">Last Updated: January 15, 2026</p>
+          <p className="text-gray-500 dark:text-gray-400 mb-8">Last Updated: January 15, 2026</p>
 
           <h2>Overview</h2>
           <p>
             Spark is committed to protecting your privacy. This privacy policy explains how we handle data in our macOS menu bar application.
           </p>
 
-          <div className="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-2xl my-8 not-prose">
-            <h3 className="text-2xl font-bold mb-4">Our Privacy Promise</h3>
-            <p className="text-xl font-semibold text-purple-800">
+          <div className="bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/30 dark:to-pink-900/30 p-8 rounded-2xl my-8 not-prose">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Our Privacy Promise</h3>
+            <p className="text-xl font-semibold text-purple-800 dark:text-purple-300">
               Spark does NOT collect, store, or transmit any personal data.
             </p>
-            <p className="text-gray-700 mt-4">
+            <p className="text-gray-700 dark:text-gray-300 mt-4">
               We believe your affirmations and usage patterns are private. We have built Spark with privacy as a core principle.
             </p>
           </div>
@@ -130,7 +130,7 @@ export default function PrivacyPolicy() {
           <p>When fetching premium content, standard HTTP requests are made to:</p>
           <ul>
             <li>
-              <code>https://raw.githubusercontent.com/logreg-n-coffee/spark/</code>
+              <code className="bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded">https://raw.githubusercontent.com/logreg-n-coffee/spark/</code>
             </li>
           </ul>
           <p>These requests may contain:</p>
@@ -325,10 +325,10 @@ export default function PrivacyPolicy() {
             <li>Children's Online Privacy Protection Act (COPPA)</li>
           </ul>
 
-          <div className="bg-purple-50 p-8 rounded-2xl my-8 not-prose">
-            <h3 className="text-2xl font-bold mb-4">Summary</h3>
-            <p className="font-semibold mb-4">TL;DR:</p>
-            <ul className="space-y-2 text-gray-700">
+          <div className="bg-purple-50 dark:bg-purple-900/30 p-8 rounded-2xl my-8 not-prose">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Summary</h3>
+            <p className="font-semibold mb-4 text-gray-900 dark:text-white">TL;DR:</p>
+            <ul className="space-y-2 text-gray-700 dark:text-gray-300">
               <li>✅ We don't collect any data</li>
               <li>✅ Everything is stored locally on your Mac</li>
               <li>✅ We can't see your history, favorites, or usage</li>
@@ -336,12 +336,12 @@ export default function PrivacyPolicy() {
               <li>✅ Premium content is delivered via CDN</li>
               <li>✅ You can verify this in our open-source code</li>
             </ul>
-            <p className="mt-6 font-semibold">
+            <p className="mt-6 font-semibold text-gray-900 dark:text-white">
               <strong>Questions?</strong> Contact us anytime.
             </p>
           </div>
 
-          <div className="border-t border-gray-200 pt-8 mt-12 text-sm text-gray-500">
+          <div className="border-t border-gray-200 dark:border-gray-700 pt-8 mt-12 text-sm text-gray-500 dark:text-gray-400">
             <p>Privacy Policy Version: 1.0</p>
             <p>Effective Date: January 15, 2026</p>
             <p>Last Reviewed: January 15, 2026</p>
