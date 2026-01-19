@@ -280,7 +280,7 @@ All dependencies are up-to-date and production-ready.
 
 ## License
 
-All rights reserved. Proprietary software.
+MIT License - Website source code is open source.
 
 ---
 

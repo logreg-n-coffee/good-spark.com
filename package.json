@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Official website for Spark - Daily affirmations for macOS",
   "author": "Spark Team",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/logreg-n-coffee/good-spark.com.git"

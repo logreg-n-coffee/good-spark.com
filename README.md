@@ -172,7 +172,7 @@ Edit `app/layout.tsx` to update:
 
 ## License
 
-All rights reserved. This is proprietary software.
+MIT License - See LICENSE file for details.
 
 ## Credits
 
