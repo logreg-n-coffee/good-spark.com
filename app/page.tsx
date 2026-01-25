@@ -24,14 +24,6 @@ export default function Home() {
             >
               Download for macOS
             </a>
-            <a
-              href="https://github.com/logreg-n-coffee/vibecheck"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="border-2 border-purple-600 text-purple-600 dark:text-purple-400 px-8 py-4 rounded-full text-lg font-semibold hover:bg-purple-50 dark:hover:bg-purple-900/30 transition"
-            >
-              View on GitHub
-            </a>
           </div>
           <p className="text-sm text-gray-500 dark:text-gray-400">
             Requires macOS 13.0 (Ventura) or later • 10 MB • Free with Premium Unlock
@@ -263,11 +255,8 @@ export default function Home() {
               Download on the App Store
             </a>
           </div>
-          <p className="text-sm text-gray-500 dark:text-gray-400 mb-8">
-            macOS 13.0 (Ventura) or later • 10 MB • Free with Premium Unlock
-          </p>
           <p className="text-sm text-gray-500 dark:text-gray-400">
-            Not on the App Store yet? <a href="https://github.com/logreg-n-coffee/vibecheck" className="text-purple-600 dark:text-purple-400 hover:underline" target="_blank" rel="noopener noreferrer">View source code on GitHub</a>
+            macOS 13.0 (Ventura) or later • 10 MB • Free with Premium Unlock
           </p>
         </div>
       </section>
