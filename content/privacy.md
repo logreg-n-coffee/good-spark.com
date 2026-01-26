@@ -1,16 +1,16 @@
-# Privacy Policy for Spark
+# Privacy Policy for Good Spark
 
 **Last Updated: January 15, 2026**
 
 ## Overview
 
-Spark is committed to protecting your privacy. This privacy policy explains how we handle data in our macOS menu bar application.
+Good Spark is committed to protecting your privacy. This privacy policy explains how we handle data in our macOS menu bar application.
 
 > **Our Privacy Promise**
 >
-> Spark does **NOT** collect, store, or transmit any personal data.
+> Good Spark does **NOT** collect, store, or transmit any personal data.
 >
-> We believe your affirmations and usage patterns are private. We have built Spark with privacy as a core principle.
+> We believe your affirmations and usage patterns are private. We have built Good Spark with privacy as a core principle.
 
 ---
 
@@ -47,13 +47,13 @@ All data is stored locally on your Mac using standard macOS APIs:
 
 ### No Cloud Sync
 
-Spark does not sync your data to any cloud service. Your history, favorites, and preferences exist only on your Mac.
+Good Spark does not sync your data to any cloud service. Your history, favorites, and preferences exist only on your Mac.
 
 ---
 
 ## In-App Purchases
 
-Spark offers a premium unlock for additional tone packs.
+Good Spark offers a premium unlock for additional tone packs.
 
 ### What Apple Handles
 
@@ -77,7 +77,7 @@ All purchase data is handled exclusively by Apple according to their [Apple Priv
 
 ## Content Updates
 
-Spark fetches premium content updates from our servers when you have purchased the premium unlock.
+Good Spark fetches premium content updates from our servers when you have purchased the premium unlock.
 
 ### Content Delivery
 
@@ -111,7 +111,7 @@ GitHub's CDN may log standard HTTP access logs according to their [GitHub Privac
 
 ## Third-Party Services
 
-Spark uses the following third-party services:
+Good Spark uses the following third-party services:
 
 ### 1. Apple StoreKit
 
@@ -131,13 +131,13 @@ Spark uses the following third-party services:
 - **Data Processed:** API requests for content metadata
 - **Privacy Policy:** [Vercel Privacy Policy](https://vercel.com/legal/privacy-policy)
 
-**None of these services receive personal user data from Spark.**
+**None of these services receive personal user data from Good Spark.**
 
 ---
 
 ## Permissions
 
-Spark requires the following macOS permissions:
+Good Spark requires the following macOS permissions:
 
 ### Network Access
 
@@ -153,7 +153,7 @@ Spark requires the following macOS permissions:
 
 ### Accessibility (Not Required)
 
-- Spark does NOT require accessibility permissions
+- Good Spark does NOT require accessibility permissions
 - Global hotkey uses standard macOS keyboard events
 
 ---
@@ -171,19 +171,19 @@ You control all data stored on your device:
 - **Reset Settings:** Change in Settings panel
 - **Complete Removal:** Uninstall the app
 
-Uninstalling Spark removes all local data from your Mac.
+Uninstalling Good Spark removes all local data from your Mac.
 
 ---
 
 ## Children's Privacy
 
-Spark is rated 4+ and is safe for all ages. We do not knowingly collect data from children or adults. We don't collect data from anyone.
+Good Spark is rated 4+ and is safe for all ages. We do not knowingly collect data from children or adults. We don't collect data from anyone.
 
 ---
 
 ## International Users
 
-Spark is available worldwide. Since we don't collect any personal data, there are no international data transfer concerns.
+Good Spark is available worldwide. Since we don't collect any personal data, there are no international data transfer concerns.
 
 ---
 
@@ -207,7 +207,7 @@ Your local data (history, favorites, preferences) is already under your complete
 
 While we don't collect data, we still take security seriously:
 
-- **App Sandbox:** Spark runs in Apple's App Sandbox
+- **App Sandbox:** Good Spark runs in Apple's App Sandbox
 - **Code Signing:** Verified with Apple Developer certificate
 - **Minimal Permissions:** Only requests necessary permissions
 - **HTTPS Only:** All network requests use encrypted connections
@@ -232,7 +232,7 @@ You can always find the latest version at:
 
 ## Contact Us
 
-If you have questions about this privacy policy or Spark's data practices:
+If you have questions about this privacy policy or Good Spark's data practices:
 
 - **Email:** [support@good-spark.com](mailto:support@good-spark.com)
 - **GitHub Issues:** [https://github.com/logreg-n-coffee/spark/issues](https://github.com/logreg-n-coffee/spark/issues)

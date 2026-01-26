@@ -34,7 +34,7 @@ export default function Home() {
       {/* Features Section */}
       <section id="features" className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-4 text-gray-900 dark:text-white">Why You'll Love Spark</h2>
+          <h2 className="text-4xl font-bold text-center mb-4 text-gray-900 dark:text-white">Why You'll Love Good Spark</h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 text-center mb-16 max-w-2xl mx-auto">
             Designed to be unobtrusive, beautiful, and privacy-first. Every feature serves your daily inspiration journey.
           </p>
@@ -214,7 +214,7 @@ export default function Home() {
           <div className="text-6xl mb-6">🔒</div>
           <h2 className="text-4xl font-bold mb-6 text-gray-900 dark:text-white">Your Privacy Matters</h2>
           <p className="text-xl text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
-            Spark collects <span className="font-bold text-purple-600 dark:text-purple-400">ZERO</span> data. No analytics, no tracking, no accounts.
+            Good Spark collects <span className="font-bold text-purple-600 dark:text-purple-400">ZERO</span> data. No analytics, no tracking, no accounts.
             Your affirmation history and favorites are stored locally on your device only.
           </p>
           <div className="grid md:grid-cols-3 gap-6 mb-8">
@@ -243,9 +243,9 @@ export default function Home() {
       {/* Download CTA */}
       <section id="download" className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-6 text-gray-900 dark:text-white">Ready to Spark Your Day?</h2>
+          <h2 className="text-4xl font-bold mb-6 text-gray-900 dark:text-white">Ready to Good Spark Your Day?</h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
-            Download Spark for macOS and start your journey to daily inspiration.
+            Download Good Spark for macOS and start your journey to daily inspiration.
           </p>
           <div className="mb-6">
             <a
@@ -268,7 +268,7 @@ export default function Home() {
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <span className="text-2xl">✨</span>
-                <span className="text-xl font-bold">Spark</span>
+                <span className="text-xl font-bold">Good Spark</span>
               </div>
               <p className="text-gray-400 text-sm">
                 Daily affirmations, instant spark.
@@ -300,7 +300,7 @@ export default function Home() {
             </div>
           </div>
           <div className="border-t border-gray-800 pt-8 text-center text-sm text-gray-400">
-            <p>&copy; 2026 Spark. Built with ❤️ using SwiftUI.</p>
+            <p>&copy; 2026 Good Spark. Built with love using SwiftUI.</p>
           </div>
         </div>
       </footer>

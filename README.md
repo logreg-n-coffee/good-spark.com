@@ -1,14 +1,14 @@
-# Spark Website (good-spark.com)
+# Good Spark Website (good-spark.com)
 
-Official website for **Spark** - Daily affirmations for your macOS menu bar.
+Official website for **Good Spark** - Daily affirmations for your macOS menu bar.
 
 ## Overview
 
-This is the production-ready marketing website for Spark, a privacy-first macOS menu bar app that delivers daily affirmations. Built with Next.js 15, TypeScript, and Tailwind CSS.
+This is the production-ready marketing website for Good Spark, a privacy-first macOS menu bar app that delivers daily affirmations. Built with Next.js 15, TypeScript, and Tailwind CSS.
 
 ## Features
 
-- **Landing Page**: Beautiful hero section showcasing Spark's features
+- **Landing Page**: Beautiful hero section showcasing Good Spark's features
 - **Tone Packs Showcase**: Display all 12 tone packs (4 free + 8 premium)
 - **Pricing Section**: Clear comparison between free and premium tiers
 - **Privacy Policy**: Full GDPR/CCPA compliant privacy policy page
@@ -161,7 +161,7 @@ Edit `app/layout.tsx` to update:
 
 ## Related Repositories
 
-- **Spark macOS App**: [github.com/logreg-n-coffee/vibecheck](https://github.com/logreg-n-coffee/vibecheck)
+- **Good Spark macOS App**: [github.com/logreg-n-coffee/vibecheck](https://github.com/logreg-n-coffee/vibecheck)
 - **Backend API**: Vercel Edge Functions in the main app repo
 
 ## Support
@@ -176,7 +176,7 @@ MIT License - See LICENSE file for details.
 
 ## Credits
 
-Built with ❤️ by the Spark Team
+Built with love by the Good Spark Team
 
 ---
 

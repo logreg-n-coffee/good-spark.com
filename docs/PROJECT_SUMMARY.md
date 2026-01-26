@@ -1,8 +1,8 @@
-# Spark Website - Project Summary
+# Good Spark Website - Project Summary
 
 ## What Was Built
 
-A production-ready marketing website for **Spark**, a macOS menu bar app that delivers daily affirmations.
+A production-ready marketing website for **Good Spark**, a macOS menu bar app that delivers daily affirmations.
 
 **Live URL** (after deployment): `https://good-spark.com`
 
@@ -125,7 +125,7 @@ All pages are pre-rendered as static HTML for optimal performance.
 ## SEO Configuration
 
 ### Meta Tags
-- Title: "Spark - Daily Affirmations for macOS"
+- Title: "Good Spark - Daily Affirmations for macOS"
 - Description: Optimized for search
 - Keywords: affirmations, motivation, menu bar, productivity, mental health
 

@@ -16,29 +16,29 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Spark - Daily Affirmations for macOS",
+  title: "Good Spark - Daily Affirmations for macOS",
   description: "Beautiful affirmations delivered right to your menu bar. Privacy-first, offline-capable, and designed for daily inspiration. 40+ free affirmations across 4 tone packs.",
   keywords: ["affirmations", "motivation", "menu bar", "productivity", "mental health", "self-care", "positivity", "macOS", "wellness"],
-  authors: [{ name: "Spark Team" }],
+  authors: [{ name: "Good Spark Team" }],
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://good-spark.com",
-    siteName: "Spark",
-    title: "Spark - Daily Affirmations for macOS",
+    siteName: "Good Spark",
+    title: "Good Spark - Daily Affirmations for macOS",
     description: "Beautiful affirmations delivered right to your menu bar. Privacy-first, offline-capable, and designed for daily inspiration.",
     images: [
       {
         url: "https://good-spark.com/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Spark - Daily Affirmations",
+        alt: "Good Spark - Daily Affirmations",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Spark - Daily Affirmations for macOS",
+    title: "Good Spark - Daily Affirmations for macOS",
     description: "Beautiful affirmations delivered right to your menu bar",
     images: ["https://good-spark.com/og-image.png"],
   },
@@ -65,7 +65,7 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Spark",
+    "name": "Good Spark",
     "applicationCategory": "LifestyleApplication",
     "operatingSystem": "macOS 13.0 or later",
     "offers": {
@@ -77,7 +77,7 @@ export default function RootLayout({
     "softwareVersion": "1.7.0",
     "author": {
       "@type": "Organization",
-      "name": "Spark Team",
+      "name": "Good Spark Team",
     },
     "aggregateRating": {
       "@type": "AggregateRating",

@@ -15,7 +15,7 @@ export function Navigation({ variant = 'home' }: NavigationProps) {
             <a href="/" className="flex items-center space-x-2">
               <span className="text-2xl">✨</span>
               <span className="text-xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-                Spark
+                Good Spark
               </span>
             </a>
             <div className="flex items-center space-x-4">

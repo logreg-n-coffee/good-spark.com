@@ -1,6 +1,6 @@
 # Deployment Guide for good-spark.com
 
-This guide covers deploying the Spark website to production.
+This guide covers deploying the Good Spark website to production.
 
 ## Prerequisites
 
@@ -15,7 +15,7 @@ This guide covers deploying the Spark website to production.
 1. **Push to GitHub**
    ```bash
    git add .
-   git commit -m "Initial commit - Production-ready Spark website"
+   git commit -m "Initial commit - Production-ready Good Spark website"
    git push origin main
    ```
 
@@ -236,7 +236,7 @@ Configured in `next.config.ts`:
 ### Resources
 - [Vercel Documentation](https://vercel.com/docs)
 - [Next.js Documentation](https://nextjs.org/docs)
-- [Spark GitHub Issues](https://github.com/logreg-n-coffee/vibecheck/issues)
+- [Good Spark GitHub Issues](https://github.com/logreg-n-coffee/vibecheck/issues)
 
 ## Cost
 

@@ -5,8 +5,8 @@ import fs from 'fs';
 import path from 'path';
 
 export const metadata: Metadata = {
-  title: "Privacy Policy - Spark",
-  description: "Spark's privacy policy - we collect zero data. No analytics, no tracking, no accounts.",
+  title: "Privacy Policy - Good Spark",
+  description: "Good Spark's privacy policy - we collect zero data. No analytics, no tracking, no accounts.",
 };
 
 function getPrivacyContent() {
@@ -35,11 +35,11 @@ export default function PrivacyPolicy() {
         <div className="max-w-7xl mx-auto text-center">
           <div className="flex items-center justify-center space-x-2 mb-4">
             <span className="text-2xl">✨</span>
-            <span className="text-xl font-bold">Spark</span>
+            <span className="text-xl font-bold">Good Spark</span>
           </div>
           <p className="text-gray-400 text-sm mb-4">Daily affirmations, instant spark.</p>
           <p className="text-gray-500 text-sm">
-            &copy; 2026 Spark. Built with love using SwiftUI.
+            &copy; 2026 Good Spark. Built with love using SwiftUI.
           </p>
         </div>
       </footer>
