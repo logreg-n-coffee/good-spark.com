@@ -20,6 +20,16 @@ export const metadata: Metadata = {
   description: "Beautiful affirmations delivered right to your menu bar. Privacy-first, offline-capable, and designed for daily inspiration. 40+ free affirmations across 4 tone packs.",
   keywords: ["affirmations", "motivation", "menu bar", "productivity", "mental health", "self-care", "positivity", "macOS", "wellness"],
   authors: [{ name: "Good Spark Team" }],
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: '16x16 32x32' },
+      { url: '/web/icon-192.png', sizes: '192x192', type: 'image/png' },
+      { url: '/web/icon-512.png', sizes: '512x512', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+  },
   openGraph: {
     type: "website",
     locale: "en_US",

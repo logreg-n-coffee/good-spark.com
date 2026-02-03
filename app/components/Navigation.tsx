@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { ThemeToggle } from './ThemeToggle';
 
 interface NavigationProps {
@@ -13,7 +14,7 @@ export function Navigation({ variant = 'home' }: NavigationProps) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <a href="/" className="flex items-center space-x-2">
-              <span className="text-2xl">✨</span>
+              <Image src="/web/icon-32.png" alt="Good Spark" width={32} height={32} className="w-8 h-8" />
               <span className="text-xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
                 Good Spark
               </span>
@@ -38,7 +39,7 @@ export function Navigation({ variant = 'home' }: NavigationProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-2">
-            <span className="text-2xl">✨</span>
+            <Image src="/web/icon-32.png" alt="Good Spark" width={32} height={32} className="w-8 h-8" />
             <span className="text-xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
               Good Spark
             </span>

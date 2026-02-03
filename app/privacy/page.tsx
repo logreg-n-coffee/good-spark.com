@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from 'next/image';
 import { Navigation } from '../components/Navigation';
 import { MarkdownContent } from '../components/MarkdownContent';
 import fs from 'fs';
@@ -34,7 +35,7 @@ export default function PrivacyPolicy() {
       <footer className="py-12 px-4 sm:px-6 lg:px-8 bg-gray-900 text-white">
         <div className="max-w-7xl mx-auto text-center">
           <div className="flex items-center justify-center space-x-2 mb-4">
-            <span className="text-2xl">✨</span>
+            <Image src="/web/icon-32.png" alt="Good Spark" width={32} height={32} className="w-8 h-8" />
             <span className="text-xl font-bold">Good Spark</span>
           </div>
           <p className="text-gray-400 text-sm mb-4">Daily affirmations, instant spark.</p>

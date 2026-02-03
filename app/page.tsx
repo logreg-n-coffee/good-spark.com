@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { Navigation } from './components/Navigation';
 
 export default function Home() {
@@ -9,7 +10,7 @@ export default function Home() {
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
           <div className="mb-8 inline-block">
-            <span className="text-8xl">✨</span>
+            <Image src="/web/icon-512.png" alt="Good Spark" width={128} height={128} className="w-32 h-32" />
           </div>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent">
             Daily Affirmations in Your Menu Bar
@@ -267,7 +268,7 @@ export default function Home() {
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <span className="text-2xl">✨</span>
+                <Image src="/web/icon-32.png" alt="Good Spark" width={32} height={32} className="w-8 h-8" />
                 <span className="text-xl font-bold">Good Spark</span>
               </div>
               <p className="text-gray-400 text-sm">
