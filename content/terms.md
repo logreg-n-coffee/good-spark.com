@@ -17,33 +17,24 @@ Good Spark grants you a limited, non-exclusive, non-transferable, revocable lice
 
 ---
 
-## 3. Subscriptions & In-App Purchases
+## 3. In-App Purchases
 
-### Auto-Renewable Subscription
+### Premium Unlock
 
 | Detail | Info |
 |--------|------|
-| **Plan** | Annual Subscription |
-| **Price** | $4.99/year |
-| **Free Trial** | 1-week free trial |
-| **Renewal** | Auto-renews unless cancelled at least 24 hours before the end of the current period |
+| **Plan** | Premium Unlock |
+| **Price** | $0.99 one-time payment |
+| **Duration** | Lifetime access — no subscription required |
 | **Billing** | Charged to your Apple ID account at confirmation of purchase |
 
-- Your account will be charged for renewal within 24 hours prior to the end of the current period at the same price.
-- You can manage and cancel your subscriptions by going to your Apple ID Account Settings after purchase.
-- Any unused portion of a free trial period will be forfeited when you purchase a subscription.
-
-### Lifetime Access
-
-| Detail | Info |
-|--------|------|
-| **Plan** | Lifetime Access |
-| **Price** | $29.99 one-time payment |
-| **Duration** | Permanent access to all premium content |
+- This is a one-time, non-recurring purchase. There are no auto-renewable subscription charges.
+- Once purchased, premium access is permanent and does not expire.
+- All purchases are processed by Apple and subject to Apple's payment terms.
 
 ### Price Changes
 
-Prices are in USD and may vary by region. We may update pricing at any time. Any price changes will not affect active subscription periods.
+Prices are in USD and may vary by region. We may update pricing at any time. In-app purchase prices are set in App Store Connect and are controlled by Apple.
 
 ---
 
@@ -52,9 +43,9 @@ Prices are in USD and may vary by region. We may update pricing at any time. Any
 Good Spark provides affirmation content organized into tone packs.
 
 - **Free Packs (4 packs, 40 affirmations):** Available to all users at no cost.
-- **Premium Packs (8+ packs, 160+ affirmations):** Require an active subscription or lifetime purchase.
+- **Premium Packs (8+ packs, 160+ affirmations):** Require the Premium Unlock purchase.
 
-Premium subscribers also receive daily content updates and new packs as they are released.
+Premium users also receive content updates and new packs as they are released.
 
 We reserve the right to update, modify, or remove content at any time.
 

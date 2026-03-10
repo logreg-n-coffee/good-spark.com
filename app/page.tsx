@@ -288,6 +288,7 @@ export default function Home() {
               <h4 className="font-semibold mb-4">Company</h4>
               <ul className="space-y-2 text-sm text-gray-400">
                 <li><a href="/privacy" className="hover:text-white transition">Privacy Policy</a></li>
+                <li><a href="/terms" className="hover:text-white transition">Terms of Use</a></li>
                 <li><a href="https://github.com/logreg-n-coffee/vibecheck" className="hover:text-white transition" target="_blank" rel="noopener noreferrer">GitHub</a></li>
                 <li><a href="mailto:support@good-spark.com" className="hover:text-white transition">Support</a></li>
               </ul>
