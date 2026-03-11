@@ -50,6 +50,7 @@ export function Navigation({ variant = 'home' }: NavigationProps) {
               <a href="#tone-packs" className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition">Tone Packs</a>
               <a href="#pricing" className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition">Pricing</a>
               <a href="/privacy" className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition">Privacy</a>
+              <a href="/terms" className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition">Terms</a>
             </div>
             <ThemeToggle />
             <a
