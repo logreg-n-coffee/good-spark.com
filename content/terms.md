@@ -29,12 +29,12 @@ Good Spark offers two premium purchase options:
 | **Price** | $4.99 per year |
 | **Free Trial** | 1-week free trial for new subscribers |
 | **Renewal** | Auto-renews annually unless cancelled |
-| **Billing** | Charged to your Apple ID account at confirmation of purchase |
+| **Billing** | Charged to your Apple ID account at confirmation of purchase, or at the end of the free trial period if a trial is offered and you do not cancel before it ends. |
 
 - **Auto-Renewal:** Your subscription will automatically renew at the end of each subscription period unless you cancel at least 24 hours before the end of the current period.
 - **Free Trial:** If offered, the free trial period lasts 1 week. If you do not cancel before the trial ends, you will be automatically charged the subscription price.
 - **Cancellation:** You can manage or cancel your subscription at any time in **System Settings → Apple ID → Subscriptions** on macOS, or via the App Store.
-- Payment will be charged to your Apple ID account at confirmation of purchase (or at the end of the free trial period, if applicable).
+- Payment will be charged to your Apple ID account at confirmation of purchase, or at the end of the free trial period if a trial is offered and you do not cancel before it ends.
 
 ### Premium Lifetime (One-Time Purchase)
 
