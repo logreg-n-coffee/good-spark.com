@@ -79,9 +79,11 @@ export default function RootLayout({
     "applicationCategory": "LifestyleApplication",
     "operatingSystem": "macOS 13.0 or later",
     "offers": {
-      "@type": "Offer",
-      "price": "0",
+      "@type": "AggregateOffer",
+      "lowPrice": "0",
+      "highPrice": "29.99",
       "priceCurrency": "USD",
+      "offerCount": "3",
     },
     "description": "Beautiful affirmations delivered right to your menu bar. Privacy-first, offline-capable, and designed for daily inspiration.",
     "softwareVersion": "1.7.0",

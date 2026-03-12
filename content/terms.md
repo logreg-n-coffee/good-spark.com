@@ -19,22 +19,39 @@ Good Spark grants you a limited, non-exclusive, non-transferable, revocable lice
 
 ## 3. In-App Purchases
 
-### Premium Unlock
+Good Spark offers two premium purchase options:
+
+### Premium Annual (Auto-Renewable Subscription)
 
 | Detail | Info |
 |--------|------|
-| **Plan** | Premium Unlock |
-| **Price** | $0.99 one-time payment |
+| **Plan** | Premium Annual |
+| **Price** | $4.99 per year |
+| **Free Trial** | 1-week free trial for new subscribers |
+| **Renewal** | Auto-renews annually unless cancelled |
+| **Billing** | Charged to your Apple ID account at confirmation of purchase |
+
+- **Auto-Renewal:** Your subscription will automatically renew at the end of each subscription period unless you cancel at least 24 hours before the end of the current period.
+- **Free Trial:** If offered, the free trial period lasts 1 week. If you do not cancel before the trial ends, you will be automatically charged the subscription price.
+- **Cancellation:** You can manage or cancel your subscription at any time in **System Settings → Apple ID → Subscriptions** on macOS, or via the App Store.
+- Payment will be charged to your Apple ID account at confirmation of purchase (or at the end of the free trial period, if applicable).
+
+### Premium Lifetime (One-Time Purchase)
+
+| Detail | Info |
+|--------|------|
+| **Plan** | Premium Lifetime |
+| **Price** | $29.99 one-time payment |
 | **Duration** | Lifetime access — no subscription required |
 | **Billing** | Charged to your Apple ID account at confirmation of purchase |
 
 - This is a one-time, non-recurring purchase. There are no auto-renewable subscription charges.
 - Once purchased, premium access is permanent and does not expire.
+
+### General
+
 - All purchases are processed by Apple and subject to Apple's payment terms.
-
-### Price Changes
-
-Prices are in USD and may vary by region. We may update pricing at any time. In-app purchase prices are set in App Store Connect and are controlled by Apple.
+- Prices are in USD and may vary by region. We may update pricing at any time. In-app purchase prices are set in App Store Connect and are controlled by Apple.
 
 ---
 
