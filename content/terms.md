@@ -60,7 +60,7 @@ Good Spark offers two premium purchase options:
 Good Spark provides affirmation content organized into tone packs.
 
 - **Free Packs (4 packs, 40 affirmations):** Available to all users at no cost.
-- **Premium Packs (8+ packs, 160+ affirmations):** Require the Premium Unlock purchase.
+- **Premium Packs (8+ packs, 160+ affirmations):** Require a Premium Annual subscription or Premium Lifetime purchase.
 
 Premium users also receive content updates and new packs as they are released.
 
