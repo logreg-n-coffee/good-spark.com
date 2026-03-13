@@ -27,7 +27,7 @@ export default function Home() {
             </a>
           </div>
           <p className="text-sm text-gray-500 dark:text-gray-400">
-            Requires macOS 13.0 (Ventura) or later • 10 MB • Free with Premium Unlock
+            Requires macOS 13.0 (Ventura) or later • 10 MB • Free with Premium Options
           </p>
         </div>
       </section>
@@ -125,9 +125,9 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-4 text-gray-900 dark:text-white">Simple, Fair Pricing</h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 text-center mb-16 max-w-2xl mx-auto">
-            Start free with 40 affirmations. Upgrade to premium for 5x more content at less than the cost of a coffee.
+            Start free with 40 affirmations. Upgrade to premium for 5x more content — subscribe annually or unlock forever.
           </p>
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Free Tier */}
             <div className="p-8 rounded-2xl border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 hover:shadow-xl transition">
               <h3 className="text-2xl font-bold mb-2 text-gray-900 dark:text-white">Free Forever</h3>
@@ -162,16 +162,58 @@ export default function Home() {
               </a>
             </div>
 
-            {/* Premium Tier */}
-            <div className="p-8 rounded-2xl border-2 border-purple-600 bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/30 dark:to-pink-900/30 hover:shadow-2xl transition relative">
-              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-purple-600 to-pink-600 text-white px-4 py-1 rounded-full text-sm font-semibold">
+            {/* Annual Subscription */}
+            <div className="p-8 rounded-2xl border-2 border-green-500 bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/30 dark:to-emerald-900/30 hover:shadow-2xl transition relative">
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-green-500 to-emerald-500 text-white px-4 py-1 rounded-full text-sm font-semibold">
                 BEST VALUE
               </div>
-              <h3 className="text-2xl font-bold mb-2 text-gray-900 dark:text-white">Premium Unlock</h3>
-              <div className="flex items-baseline mb-6">
-                <span className="text-5xl font-bold text-gray-900 dark:text-white">$0.99</span>
+              <h3 className="text-2xl font-bold mb-2 text-gray-900 dark:text-white">Premium Annual</h3>
+              <div className="flex items-baseline mb-2">
+                <span className="text-5xl font-bold text-gray-900 dark:text-white">$4.99</span>
+                <span className="text-gray-600 dark:text-gray-400 ml-2">/year</span>
+              </div>
+              <p className="text-sm text-green-600 dark:text-green-400 mb-6 font-medium">1-week free trial, then auto-renews</p>
+              <ul className="space-y-3 mb-8">
+                <li className="flex items-start">
+                  <span className="text-green-500 mr-2">✓</span>
+                  <span className="font-semibold text-gray-900 dark:text-white">Everything in Free, plus:</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-green-500 mr-2">✓</span>
+                  <span className="text-gray-700 dark:text-gray-300">160+ premium affirmations (5x more content)</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-green-500 mr-2">✓</span>
+                  <span className="text-gray-700 dark:text-gray-300">8 additional tone packs</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-green-500 mr-2">✓</span>
+                  <span className="text-gray-700 dark:text-gray-300">Automatic content updates</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-green-500 mr-2">✓</span>
+                  <span className="text-gray-700 dark:text-gray-300">Cancel anytime</span>
+                </li>
+              </ul>
+              <a
+                href="#download"
+                className="block text-center bg-gradient-to-r from-green-500 to-emerald-500 text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transition"
+              >
+                Start Free Trial
+              </a>
+            </div>
+
+            {/* Lifetime Access */}
+            <div className="p-8 rounded-2xl border-2 border-purple-600 bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/30 dark:to-pink-900/30 hover:shadow-2xl transition relative">
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-purple-600 to-pink-600 text-white px-4 py-1 rounded-full text-sm font-semibold">
+                FOREVER
+              </div>
+              <h3 className="text-2xl font-bold mb-2 text-gray-900 dark:text-white">Lifetime Access</h3>
+              <div className="flex items-baseline mb-2">
+                <span className="text-5xl font-bold text-gray-900 dark:text-white">$29.99</span>
                 <span className="text-gray-600 dark:text-gray-400 ml-2">one-time</span>
               </div>
+              <p className="text-sm text-purple-600 dark:text-purple-400 mb-6 font-medium">Pay once, keep forever</p>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start">
                   <span className="text-purple-600 dark:text-purple-400 mr-2">✓</span>
@@ -191,7 +233,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-start">
                   <span className="text-purple-600 dark:text-purple-400 mr-2">✓</span>
-                  <span className="text-gray-700 dark:text-gray-300">Lifetime access (no subscription)</span>
+                  <span className="text-gray-700 dark:text-gray-300">No subscription — permanent access</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-purple-600 dark:text-purple-400 mr-2">✓</span>
@@ -202,7 +244,7 @@ export default function Home() {
                 href="#download"
                 className="block text-center bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transition"
               >
-                Get Premium
+                Get Lifetime
               </a>
             </div>
           </div>
@@ -257,7 +299,7 @@ export default function Home() {
             </a>
           </div>
           <p className="text-sm text-gray-500 dark:text-gray-400">
-            macOS 13.0 (Ventura) or later • 10 MB • Free with Premium Unlock
+            macOS 13.0 (Ventura) or later • 10 MB • Free with Premium Options
           </p>
         </div>
       </section>
