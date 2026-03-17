@@ -292,7 +292,7 @@ export default function Home() {
           </p>
           <div className="mb-6">
             <a
-              href="https://apps.apple.com/app/spark"
+              href="https://apps.apple.com/app/good-spark-affirmations/id6758261166"
               className="inline-block bg-gradient-to-r from-purple-600 to-pink-600 text-white px-12 py-4 rounded-full text-xl font-semibold hover:shadow-2xl transition transform hover:scale-105"
             >
               Download on the App Store
