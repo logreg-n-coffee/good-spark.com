@@ -120,7 +120,7 @@ These Terms are governed by the laws of the State of California, United States.
 
 If you have questions about these Terms:
 
-- **Email:** [support@good-spark.com](mailto:support@good-spark.com)
+- **Contact:** [Contact Good Spark support](/contact)
 - **Website:** [https://good-spark.com](https://good-spark.com)
 
 We typically respond within 24-48 hours.

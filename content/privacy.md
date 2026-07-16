@@ -234,7 +234,7 @@ You can always find the latest version at:
 
 If you have questions about this privacy policy or Good Spark's data practices:
 
-- **Email:** [support@good-spark.com](mailto:support@good-spark.com)
+- **Contact:** [Contact Good Spark support](/contact)
 - **GitHub Issues:** [https://github.com/logreg-n-coffee/spark/issues](https://github.com/logreg-n-coffee/spark/issues)
 - **Website:** [https://good-spark.com](https://good-spark.com)
 

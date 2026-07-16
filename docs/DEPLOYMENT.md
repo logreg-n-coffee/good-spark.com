@@ -236,7 +236,7 @@ Configured in `next.config.ts`:
 ### Resources
 - [Vercel Documentation](https://vercel.com/docs)
 - [Next.js Documentation](https://nextjs.org/docs)
-- [Good Spark GitHub Issues](https://github.com/logreg-n-coffee/vibecheck/issues)
+- [Good Spark support](https://good-spark.com/contact)
 
 ## Cost
 

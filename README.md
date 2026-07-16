@@ -161,13 +161,13 @@ Edit `app/layout.tsx` to update:
 
 ## Related Repositories
 
-- **Good Spark macOS App**: [github.com/logreg-n-coffee/vibecheck](https://github.com/logreg-n-coffee/vibecheck)
+- **Good Spark app support**: [Contact page](https://good-spark.com/contact)
 - **Backend API**: Vercel Edge Functions in the main app repo
 
 ## Support
 
-- **Email**: support@good-spark.com
-- **Issues**: [GitHub Issues](https://github.com/logreg-n-coffee/vibecheck/issues)
+- **Support**: [Contact page](https://good-spark.com/contact)
+- **Issues**: [Contact page](https://good-spark.com/contact)
 - **Website**: [good-spark.com](https://good-spark.com)
 
 ## License

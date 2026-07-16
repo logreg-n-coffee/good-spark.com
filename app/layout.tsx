@@ -16,8 +16,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Good Spark - Daily Affirmations for macOS",
-  description: "Beautiful affirmations delivered right to your menu bar. Privacy-first, offline-capable, and designed for daily inspiration. 40+ free affirmations across 4 tone packs.",
+  metadataBase: new URL("https://good-spark.com"),
+  title: "Good Spark — Daily affirmations for iPhone and Mac",
+  description: "Personal affirmations on iPhone, iPad, widgets, and your Mac menu bar. No account required, private by design, and available in 21 languages.",
   keywords: ["affirmations", "motivation", "menu bar", "productivity", "mental health", "self-care", "positivity", "macOS", "wellness"],
   authors: [{ name: "Good Spark Team" }],
   icons: {
@@ -35,22 +36,13 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://good-spark.com",
     siteName: "Good Spark",
-    title: "Good Spark - Daily Affirmations for macOS",
-    description: "Beautiful affirmations delivered right to your menu bar. Privacy-first, offline-capable, and designed for daily inspiration.",
-    images: [
-      {
-        url: "https://good-spark.com/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Good Spark - Daily Affirmations",
-      },
-    ],
+    title: "Good Spark — A small spark, right when you need it",
+    description: "Personal affirmations for iPhone, iPad, widgets, and your Mac menu bar.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Good Spark - Daily Affirmations for macOS",
-    description: "Beautiful affirmations delivered right to your menu bar",
-    images: ["https://good-spark.com/og-image.png"],
+    title: "Good Spark — A small spark, right when you need it",
+    description: "Personal affirmations for iPhone, iPad, widgets, and your Mac menu bar.",
   },
   robots: {
     index: true,
@@ -77,7 +69,7 @@ export default function RootLayout({
     "@type": "SoftwareApplication",
     "name": "Good Spark",
     "applicationCategory": "LifestyleApplication",
-    "operatingSystem": "macOS 13.0 or later",
+    "operatingSystem": "iOS 17.0 or later, macOS 13.0 or later",
     "offers": {
     "@type": "AggregateOffer",
     "lowPrice": "0",
@@ -85,8 +77,8 @@ export default function RootLayout({
     "priceCurrency": "USD",
     "offerCount": 3,
     },
-    "description": "Beautiful affirmations delivered right to your menu bar. Privacy-first, offline-capable, and designed for daily inspiration.",
-    "softwareVersion": "1.7.0",
+    "description": "Personal affirmations for iPhone, iPad, widgets, and your Mac menu bar. Private by design and available in 21 languages.",
+    "softwareVersion": "1.23.0",
     "author": {
       "@type": "Organization",
       "name": "Good Spark Team",
