@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { ThemeToggle } from './ThemeToggle';
 
 interface NavigationProps {
@@ -13,20 +14,20 @@ export function Navigation({ variant = 'home' }: NavigationProps) {
       <nav className="fixed top-0 w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <a href="/" className="flex items-center space-x-2">
+            <Link href="/" className="flex items-center space-x-2">
               <Image src="/web/icon-32.png" alt="Good Spark" width={32} height={32} className="w-8 h-8" />
               <span className="text-xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
                 Good Spark
               </span>
-            </a>
+            </Link>
             <div className="flex items-center space-x-4">
               <ThemeToggle />
-              <a
+              <Link
                 href="/"
                 className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition"
               >
                 Back to Home
-              </a>
+              </Link>
             </div>
           </div>
         </div>

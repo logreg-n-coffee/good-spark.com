@@ -19,7 +19,7 @@ A production-ready marketing website for **Good Spark**, a macOS menu bar app th
 
 ### 2. Privacy Policy Page (`/privacy`)
 - Full GDPR/CCPA compliant privacy policy
-- Migrated from vibecheck repo
+- Migrated from the original app repository
 - Clear, readable design with sections
 - Emphasizes zero data collection
 
@@ -274,9 +274,8 @@ All dependencies are up-to-date and production-ready.
 ## Contact & Support
 
 - **Website**: https://good-spark.com
-- **Support Email**: support@good-spark.com
-- **GitHub**: https://github.com/logreg-n-coffee/vibecheck
-- **Issues**: https://github.com/logreg-n-coffee/vibecheck/issues
+- **Support**: https://good-spark.com/contact
+- **Issues**: https://good-spark.com/contact
 
 ## License
 
