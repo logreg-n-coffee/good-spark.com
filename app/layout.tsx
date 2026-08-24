@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { Analytics } from '@vercel/analytics/react';
-import { SpeedInsights } from '@vercel/speed-insights/next';
 import { ThemeProvider } from './components/ThemeProvider';
 import "./globals.css";
 
@@ -18,8 +16,8 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://good-spark.com"),
   title: "Good Spark — Daily affirmations for iPhone and Mac",
-  description: "Personal affirmations on iPhone, iPad, widgets, and your Mac menu bar. No account required, private by design, and available in 21 languages.",
-  keywords: ["affirmations", "motivation", "menu bar", "productivity", "mental health", "self-care", "positivity", "macOS", "wellness"],
+  description: "Personal affirmations on iPhone, iPad, widgets, and the Mac menu bar, with a preview of Live Spark coming in the next iPhone update. Private by design and available in 22 languages.",
+  keywords: ["affirmations", "widgets", "menu bar", "motivation", "self-care", "iOS", "macOS", "wellness", "Dynamic Island preview", "Lock Screen preview"],
   authors: [{ name: "Good Spark Team" }],
   icons: {
     icon: [
@@ -37,12 +35,12 @@ export const metadata: Metadata = {
     url: "https://good-spark.com",
     siteName: "Good Spark",
     title: "Good Spark — A small spark, right when you need it",
-    description: "Personal affirmations for iPhone, iPad, widgets, and your Mac menu bar.",
+    description: "Personal affirmations for iPhone, iPad, widgets, and Mac — plus a preview of Live Spark, coming in the next iPhone update.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Good Spark — A small spark, right when you need it",
-    description: "Personal affirmations for iPhone, iPad, widgets, and your Mac menu bar.",
+    description: "Personal affirmations for iPhone, iPad, widgets, and Mac — plus a preview of Live Spark, coming in the next iPhone update.",
   },
   robots: {
     index: true,
@@ -77,8 +75,15 @@ export default function RootLayout({
     "priceCurrency": "USD",
     "offerCount": 3,
     },
-    "description": "Personal affirmations for iPhone, iPad, widgets, and your Mac menu bar. Private by design and available in 21 languages.",
-    "softwareVersion": "1.23.0",
+    "description": "Personal affirmations for iPhone, iPad, Home Screen and Lock Screen widgets, and your Mac menu bar. Private by design and available in 22 languages.",
+    "featureList": [
+      "Home Screen widgets",
+      "Lock Screen widgets",
+      "Mac menu bar companion",
+      "22 supported languages",
+      "On-device history and favorites",
+    ],
+    "softwareVersion": "1.25.0",
     "author": {
       "@type": "Organization",
       "name": "Good Spark Team",
@@ -107,8 +112,6 @@ export default function RootLayout({
         <ThemeProvider>
           {children}
         </ThemeProvider>
-        <Analytics />
-        <SpeedInsights />
       </body>
     </html>
   );

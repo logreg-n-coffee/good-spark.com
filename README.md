@@ -1,31 +1,27 @@
 # Good Spark Website (good-spark.com)
 
-Official website for **Good Spark** - Daily affirmations for your macOS menu bar.
+Official website for **Good Spark** — daily affirmations for iPhone, iPad, the Lock Screen, Dynamic Island, widgets, and the Mac menu bar.
 
 ## Overview
 
-This is the production-ready marketing website for Good Spark, a privacy-first macOS menu bar app that delivers daily affirmations. Built with Next.js 15, TypeScript, and Tailwind CSS.
+This is the static marketing and support website for Good Spark. The homepage and its six product scenes are localized in the same 22 languages as the app, including right-to-left layout for Arabic.
 
 ## Features
 
-- **Landing Page**: Beautiful hero section showcasing Good Spark's features
-- **Tone Packs Showcase**: Display all 12 tone packs (4 free + 8 premium)
-- **Pricing Section**: Clear comparison between free and premium tiers
-- **Privacy Policy**: Full GDPR/CCPA compliant privacy policy page
-- **SEO Optimized**: Meta tags, OpenGraph, structured data (JSON-LD), robots.txt, sitemap
-- **Performance**: Vercel Analytics and Speed Insights integration
-- **Responsive Design**: Mobile-first design with Tailwind CSS
-- **Production Ready**: Security headers, image optimization, compression
+- **Localized homepage**: 22-language picker with automatic browser-language selection
+- **Localized product scenes**: Mac popover, welcome, settings, history, Lock Screen, and Dynamic Island
+- **Live Spark preview**: An accurate preview of the upcoming iPhone update
+- **Tone packs**: All 12 packs, localized in every supported language
+- **Support pages**: Privacy policy, terms, and contact
+- **Static export**: Responsive output deployed through GitHub Pages
 
 ## Tech Stack
 
-- **Framework**: Next.js 15 (App Router)
+- **Framework**: Next.js 16 (App Router)
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS
 - **Fonts**: Geist Sans & Geist Mono
-- **Deployment**: Vercel
-- **Analytics**: Vercel Analytics (privacy-friendly)
-- **Performance Monitoring**: Vercel Speed Insights
+- **Deployment**: GitHub Pages
 
 ## Getting Started
 
@@ -56,34 +52,20 @@ Open [http://localhost:3000](http://localhost:3000) to view the site.
 ```
 good-spark.com/
 ├── app/
-│   ├── layout.tsx          # Root layout with metadata & analytics
-│   ├── page.tsx            # Landing page
-│   ├── privacy/
-│   │   └── page.tsx        # Privacy policy page
-│   ├── robots.ts           # Robots.txt configuration
-│   ├── sitemap.ts          # Sitemap configuration
-│   └── globals.css         # Global styles
-├── public/                 # Static assets
-├── next.config.ts          # Next.js configuration
-├── vercel.json             # Vercel deployment config
-├── tailwind.config.ts      # Tailwind CSS config
-└── tsconfig.json           # TypeScript configuration
+│   ├── components/         # Homepage and localized product scenes
+│   ├── home-i18n.ts        # Locale resolution and message types
+│   ├── home-messages.json  # Homepage copy in 22 languages
+│   ├── tone-packs.json     # Localized tone-pack names
+│   ├── layout.tsx          # Metadata and structured data
+│   └── globals.css         # Responsive and RTL-aware styles
+├── scripts/                # Localization contract validation
+├── public/                 # Static assets, robots.txt, and sitemap.xml
+└── next.config.ts          # Static-export configuration
 ```
 
 ## Deployment
 
-### Deploy to Vercel (Recommended)
-
-1. Push code to GitHub
-2. Import repository in Vercel
-3. Configure custom domain: `good-spark.com`
-4. Deploy
-
-```bash
-# Or deploy via Vercel CLI
-npm install -g vercel
-vercel --prod
-```
+Pushes to `main` run `.github/workflows/deploy.yml`, build the static `out/` directory with Node.js 20, and deploy it to GitHub Pages. `public/CNAME` maps the Pages deployment to `good-spark.com`.
 
 ### Environment Variables
 
@@ -94,21 +76,19 @@ No environment variables are required for this static website.
 - **Meta Tags**: Configured in `app/layout.tsx`
 - **OpenGraph**: Social media preview images
 - **Structured Data**: JSON-LD schema for SoftwareApplication
-- **Robots.txt**: Generated at `/robots.txt`
-- **Sitemap**: Generated at `/sitemap.xml`
+- **Robots.txt**: Static at `/robots.txt`
+- **Sitemap**: Static at `/sitemap.xml`
 
 ## Performance
 
 - **Bundle Size**: Optimized with Next.js automatic code splitting
 - **Image Optimization**: AVIF and WebP formats with responsive sizes
 - **Caching**: Static assets cached with immutable headers
-- **Analytics**: Privacy-friendly Vercel Analytics
-- **Speed Insights**: Real User Monitoring (RUM)
+- **Runtime**: Fully static pages with no analytics or tracking scripts
 
 ## Security
 
-- HTTPS enforced via Vercel
-- Security headers configured (CSP, X-Frame-Options, etc.)
+- HTTPS enforced by GitHub Pages
 - No tracking scripts (privacy-first)
 - GDPR/CCPA compliant
 
@@ -129,8 +109,10 @@ npm run dev
 # Production build
 npm run build
 
-# Type checking
-npx tsc --noEmit
+# Localization contract, type checking, and linting
+npm test
+npm run typecheck
+npm run lint
 
 # Linting
 npm run lint
@@ -140,12 +122,7 @@ npm run lint
 
 ### Updating the Landing Page
 
-Edit `app/page.tsx` to modify:
-- Hero section
-- Features
-- Tone packs
-- Pricing
-- Footer
+Edit `app/components/HomePage.tsx` for structure, `app/home-messages.json` for localized copy, and `app/tone-packs.json` for localized pack names. Run `npm test` after changing messages; every locale must expose the same keys and all six scenes.
 
 ### Updating Privacy Policy
 
@@ -162,7 +139,7 @@ Edit `app/layout.tsx` to update:
 ## Related Repositories
 
 - **Good Spark app support**: [Contact page](https://good-spark.com/contact)
-- **Backend API**: Vercel Edge Functions in the main app repo
+- **Backend API**: Separate Vercel service consumed by the native clients
 
 ## Support
 
@@ -181,4 +158,4 @@ Built with love by the Good Spark Team
 ---
 
 **Version**: 1.0.0
-**Last Updated**: January 2026
+**Last Updated**: August 2026

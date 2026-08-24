@@ -1,7 +1,7 @@
 {
   "name": "good-spark.com",
   "version": "1.0.0",
-  "description": "Official website for Good Spark - Daily affirmations for macOS",
+  "description": "Official website for Good Spark — daily affirmations for iPhone, iPad, Lock Screen, Dynamic Island, and Mac",
   "author": "Good Spark Team",
   "license": "MIT",
   "repository": {
@@ -13,12 +13,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run test:i18n",
+    "test:i18n": "node scripts/validate-home-i18n.mjs"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.19",
-    "@vercel/analytics": "^1.6.1",
-    "@vercel/speed-insights": "^1.3.1",
     "next": "^16.1.7",
     "react": "19.2.3",
     "react-dom": "19.2.3",
