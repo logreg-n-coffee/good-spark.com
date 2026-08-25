@@ -128,7 +128,7 @@ export function HomePage() {
     </section>
 
     <section className="section live-section" id="live">
-      <div className="section-heading split"><div><p className="eyebrow">{messages["live.eyebrow"]}</p><p className="live-upcoming"><span aria-hidden="true">✶</span>{messages["live.upcoming"]}</p><h2>{messages["live.title"]}</h2></div><p>{messages["live.body"]}</p></div>
+      <div className="section-heading split"><div><p className="eyebrow">{messages["live.eyebrow"]}</p><p className="live-available"><span aria-hidden="true">✶</span>{messages["live.available"]}</p><h2>{messages["live.title"]}</h2></div><p>{messages["live.body"]}</p></div>
       <div className="live-grid">
         <figure><ProductScene kind="lock-screen" messages={messages} tonePacks={tonePacks} /><figcaption><span>◉</span><div><h3>{messages["live.lock.title"]}</h3><p>{messages["live.lock.body"]}</p></div></figcaption></figure>
         <figure><ProductScene kind="dynamic-island" messages={messages} tonePacks={tonePacks} /><figcaption><span>◐</span><div><h3>{messages["live.island.title"]}</h3><p>{messages["live.island.body"]}</p></div></figcaption></figure>

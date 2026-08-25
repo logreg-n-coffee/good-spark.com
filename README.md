@@ -10,7 +10,7 @@ This is the static marketing and support website for Good Spark. The homepage an
 
 - **Localized homepage**: 22-language picker with automatic browser-language selection
 - **Localized product scenes**: Mac popover, welcome, settings, history, Lock Screen, and Dynamic Island
-- **Live Spark preview**: An accurate preview of the upcoming iPhone update
+- **Live Spark**: Current Lock Screen Live Activity and Dynamic Island support on iPhone
 - **Tone packs**: All 12 packs, localized in every supported language
 - **Support pages**: Privacy policy, terms, and contact
 - **Static export**: Responsive output deployed through GitHub Pages

@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://good-spark.com"),
   title: "Good Spark — Daily affirmations for iPhone and Mac",
-  description: "Personal affirmations on iPhone, iPad, widgets, and the Mac menu bar, with a preview of Live Spark coming in the next iPhone update. Private by design and available in 22 languages.",
-  keywords: ["affirmations", "widgets", "menu bar", "motivation", "self-care", "iOS", "macOS", "wellness", "Dynamic Island preview", "Lock Screen preview"],
+  description: "Personal affirmations on iPhone, iPad, widgets, the Lock Screen, Dynamic Island, and the Mac menu bar. Live Spark keeps one thoughtful message close. Private by design and available in 22 languages.",
+  keywords: ["affirmations", "widgets", "menu bar", "motivation", "self-care", "iOS", "macOS", "wellness", "Live Spark", "Live Activities", "Dynamic Island", "Lock Screen"],
   authors: [{ name: "Good Spark Team" }],
   icons: {
     icon: [
@@ -35,12 +35,12 @@ export const metadata: Metadata = {
     url: "https://good-spark.com",
     siteName: "Good Spark",
     title: "Good Spark — A small spark, right when you need it",
-    description: "Personal affirmations for iPhone, iPad, widgets, and Mac — plus a preview of Live Spark, coming in the next iPhone update.",
+    description: "Personal affirmations for iPhone, iPad, widgets, and Mac — with Live Spark on the Lock Screen and Dynamic Island.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Good Spark — A small spark, right when you need it",
-    description: "Personal affirmations for iPhone, iPad, widgets, and Mac — plus a preview of Live Spark, coming in the next iPhone update.",
+    description: "Personal affirmations for iPhone, iPad, widgets, and Mac — with Live Spark on the Lock Screen and Dynamic Island.",
   },
   robots: {
     index: true,
@@ -75,15 +75,18 @@ export default function RootLayout({
     "priceCurrency": "USD",
     "offerCount": 3,
     },
-    "description": "Personal affirmations for iPhone, iPad, Home Screen and Lock Screen widgets, and your Mac menu bar. Private by design and available in 22 languages.",
+    "description": "Personal affirmations for iPhone, iPad, Home Screen and Lock Screen widgets, Live Spark on the Lock Screen and Dynamic Island, and your Mac menu bar. Private by design and available in 22 languages.",
     "featureList": [
       "Home Screen widgets",
       "Lock Screen widgets",
+      "Live Spark Live Activities",
+      "Lock Screen Live Activities",
+      "Dynamic Island support",
       "Mac menu bar companion",
       "22 supported languages",
       "On-device history and favorites",
     ],
-    "softwareVersion": "1.25.0",
+    "softwareVersion": "1.26.0",
     "author": {
       "@type": "Organization",
       "name": "Good Spark Team",
