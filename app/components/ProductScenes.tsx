@@ -35,7 +35,7 @@ function Toggle({ enabled = false }: { enabled?: boolean }) {
 
 function PopoverScene({ messages, tonePacks }: SceneData) {
   return <div className="scene-desktop scene-desktop-popover">
-    <div className="scene-menubar"><strong><SparkMark /> Good Spark</strong><span>⌘ &nbsp; ✦ &nbsp; 10:30</span></div>
+    <div className="scene-menubar"><strong><SparkMark /> {messages["app.name"]}</strong><span>⌘ &nbsp; ✦ &nbsp; 10:30</span></div>
     <div className="scene-popover-card">
       <div className="scene-popover-top"><SparkMark /><span>⌘</span></div>
       <blockquote>{messages["scene.affirmation.one"]}</blockquote>
@@ -53,7 +53,7 @@ function WelcomeScene({ messages }: SceneData) {
   ];
 
   return <div className="scene-desktop scene-desktop-welcome">
-    <div className="scene-menubar"><strong><SparkMark /> Good Spark</strong><span>10:30</span></div>
+    <div className="scene-menubar"><strong><SparkMark /> {messages["app.name"]}</strong><span>10:30</span></div>
     <div className="scene-window scene-welcome-window">
       <WindowDots />
       <div className="scene-welcome-mark"><SparkMark /></div>
@@ -69,7 +69,7 @@ function WelcomeScene({ messages }: SceneData) {
 
 function SettingsScene({ messages, tonePacks }: SceneData) {
   return <div className="scene-desktop scene-desktop-settings">
-    <div className="scene-menubar"><strong><SparkMark /> Good Spark</strong><span>10:30</span></div>
+    <div className="scene-menubar"><strong><SparkMark /> {messages["app.name"]}</strong><span>10:30</span></div>
     <div className="scene-window scene-settings-window">
       <WindowDots />
       <h3>{messages["scene.settings.title"]}</h3>
@@ -96,7 +96,7 @@ function HistoryScene({ messages, tonePacks }: SceneData) {
   ];
 
   return <div className="scene-desktop scene-desktop-history">
-    <div className="scene-menubar"><strong><SparkMark /> Good Spark</strong><span>10:30</span></div>
+    <div className="scene-menubar"><strong><SparkMark /> {messages["app.name"]}</strong><span>10:30</span></div>
     <div className="scene-window scene-history-window">
       <WindowDots />
       <div className="scene-history-title"><h3>{messages["scene.history.title"]}</h3><span>{messages["scene.clear"]}</span></div>
@@ -115,7 +115,7 @@ function LockScreenScene({ messages, tonePacks }: SceneData) {
     <div className="scene-phone-status"><span>9:41</span><span>▰ ᯤ</span></div>
     <div className="scene-lock-heading"><span aria-hidden="true">◉</span><strong>24 · 08</strong></div>
     <div className="scene-lock-activity">
-      <div className="scene-live-heading"><SparkMark /><strong>Good Spark</strong><span>{messages["scene.live.active"]}</span></div>
+      <div className="scene-live-heading"><SparkMark /><strong>{messages["app.name"]}</strong><span>{messages["scene.live.active"]}</span></div>
       <blockquote>{messages["scene.affirmation.two"]}</blockquote>
       <small>🧘 {tonePacks[2]} <span className="scene-live-end">{messages["scene.live.end"]}</span></small>
     </div>
@@ -128,7 +128,7 @@ function DynamicIslandScene({ messages }: SceneData) {
     <div className="scene-phone-status"><span>9:41</span><span>▰ ᯤ</span></div>
     <div className="scene-dynamic-island">
       <SparkMark />
-      <div><strong>Good Spark</strong><span>{messages["scene.affirmation.three"]}</span></div>
+      <div><strong>{messages["app.name"]}</strong><span>{messages["scene.affirmation.three"]}</span></div>
       <small aria-hidden="true">✦</small>
     </div>
     <div className="scene-island-glow"><SparkMark /></div>
@@ -161,6 +161,6 @@ export function HeroShowcase({ messages, tonePacks }: SceneData) {
       <div className="phone-actions"><b>⚄&nbsp; {messages["scene.next"]}</b><i>⌄</i><i>♡</i><i>↗</i><i>▣</i></div><small>✨ {tonePacks[0]} &nbsp;·&nbsp; 3 ✦ &nbsp;·&nbsp; 7 🔥</small>
     </div>
     <div className="mac-card"><div className="mac-top"><span>✦</span><span>⌘</span></div><p>{messages["scene.affirmation.two"]}</p><div><b>⚄ {messages["scene.next"]}</b><span>⌄</span><span>♡</span><span>↗</span><span>▣</span></div><small>🧘 {tonePacks[2]} &nbsp;·&nbsp; 4 ✦</small></div>
-    <div className="widget"><span>GOOD SPARK</span><p>{messages["scene.affirmation.three"]}</p><small>✨ {tonePacks[0]}</small></div>
+    <div className="widget"><span>{messages["app.name"]}</span><p>{messages["scene.affirmation.three"]}</p><small>✨ {tonePacks[0]}</small></div>
   </div>;
 }

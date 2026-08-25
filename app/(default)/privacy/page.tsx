@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from 'next/image';
-import { Navigation } from '../components/Navigation';
-import { MarkdownContent } from '../components/MarkdownContent';
+import { Navigation } from '../../components/Navigation';
+import { MarkdownContent } from '../../components/MarkdownContent';
 import fs from 'fs';
 import path from 'path';
 

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { ContactButton } from "../components/ContactButton";
-import { Navigation } from "../components/Navigation";
+import { ContactButton } from "../../components/ContactButton";
+import { Navigation } from "../../components/Navigation";
 
 export const metadata: Metadata = {
   title: "Contact — Good Spark",

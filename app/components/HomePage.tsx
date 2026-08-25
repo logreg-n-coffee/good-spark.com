@@ -1,10 +1,13 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import {
   DEFAULT_LOCALE,
   getLocaleMeta,
+  getLocalePath,
   getMessages,
   getTonePacks,
   LANGUAGE_STORAGE_KEY,
@@ -26,13 +29,24 @@ const GALLERY_SCENES: ReadonlyArray<{ kind: ProductSceneKind; caption: "gallery.
   { kind: "history", caption: "gallery.history" },
 ];
 
-export function HomePage() {
-  const [language, setLanguage] = useState<Locale>(DEFAULT_LOCALE);
+interface HomePageProps {
+  initialLocale?: Locale;
+  detectPreferredLocale?: boolean;
+}
+
+export function HomePage({
+  initialLocale = DEFAULT_LOCALE,
+  detectPreferredLocale = false,
+}: HomePageProps) {
+  const router = useRouter();
+  const [language, setLanguage] = useState<Locale>(initialLocale);
   const messages = getMessages(language);
   const tonePacks = getTonePacks(language);
   const localeMeta = getLocaleMeta(language);
 
   useEffect(() => {
+    if (!detectPreferredLocale) return;
+
     const storedLocale = localStorage.getItem(LANGUAGE_STORAGE_KEY);
     const preferred = storedLocale
       ? resolveLocale(storedLocale)
@@ -40,7 +54,10 @@ export function HomePage() {
 
     // eslint-disable-next-line react-hooks/set-state-in-effect -- restore the persisted/browser locale after hydration
     setLanguage(preferred);
-  }, []);
+    if (preferred !== initialLocale) {
+      router.replace(getLocalePath(preferred), { scroll: false });
+    }
+  }, [detectPreferredLocale, initialLocale, router]);
 
   useEffect(() => {
     document.documentElement.lang = language;
@@ -51,6 +68,7 @@ export function HomePage() {
     const locale = resolveLocale(value);
     setLanguage(locale);
     localStorage.setItem(LANGUAGE_STORAGE_KEY, locale);
+    router.push(getLocalePath(locale), { scroll: false });
   };
 
   const metrics = [
@@ -74,11 +92,11 @@ export function HomePage() {
     messages["privacy.bullet.offline"],
   ];
 
-  return <main dir={localeMeta.direction}>
+  return <main lang={language} dir={localeMeta.direction}>
     <p className="sr-only" role="status" aria-live="polite">{messages["aria.language"]}: {localeMeta.name}</p>
 
     <header className="site-header">
-      <a className="brand" href="#top" aria-label={messages["aria.home"]}><Image src="/web/icon-32.png" alt="" width={34} height={34} /><span>Good Spark</span></a>
+      <a className="brand" href="#top" aria-label={messages["aria.home"]}><Image src="/web/icon-32.png" alt="" width={34} height={34} /><span>{messages["app.name"]}</span></a>
       <nav aria-label={messages["aria.nav"]}>
         <a href="#why">{messages["nav.why"]}</a>
         <a href="#inside">{messages["nav.inside"]}</a>
@@ -98,6 +116,7 @@ export function HomePage() {
     <section className="hero" id="top">
       <div className="hero-copy">
         <p className="eyebrow"><span>✦</span> {messages["hero.available"]}</p>
+        <p className="hero-product-name">{messages["app.name"]}</p>
         <h1>{messages["hero.title"]}</h1>
         <p className="lede">{messages["footer.tagline"]}</p>
         <div className="hero-actions">
@@ -138,11 +157,11 @@ export function HomePage() {
 
     <section className="section privacy" id="privacy">
       <div className="privacy-mark">◎<span>✓</span></div>
-      <div><p className="eyebrow">{messages["privacy.eyebrow"]}</p><h2>{messages["privacy.title"]}</h2><p>{messages["privacy.body"]}</p><a href="/privacy">{messages["privacy.link"]} <span>→</span></a></div>
+      <div><p className="eyebrow">{messages["privacy.eyebrow"]}</p><h2>{messages["privacy.title"]}</h2><p>{messages["privacy.body"]}</p><Link href="/privacy">{messages["privacy.link"]} <span>→</span></Link></div>
       <div className="privacy-list">{privacyPoints.map((point) => <p key={point}><span>✓</span> {point}</p>)}</div>
     </section>
 
-    <section className="final-cta"><Image src="/web/icon-512.png" alt="Good Spark" width={104} height={104} /><h2>{messages["cta.title"]}</h2><p>{messages["cta.body"]}</p><a className="button light" href={APP_STORE_URL}>{messages["hero.download"]} <span>↗</span></a><small>{messages["cta.requirements"]}</small></section>
-    <footer><div className="brand"><Image src="/web/icon-32.png" alt="" width={30} height={30} /><span>Good Spark</span></div><p>{messages["footer.tagline"]}</p><div><a href="/privacy">{messages["footer.privacy"]}</a><a href="/terms">{messages["footer.terms"]}</a><a href="/contact">{messages["footer.support"]}</a></div><small>{messages["footer.copyright"]}</small></footer>
+    <section className="final-cta"><Image src="/web/icon-512.png" alt={messages["app.name"]} width={104} height={104} /><h2>{messages["cta.title"]}</h2><p>{messages["cta.body"]}</p><a className="button light" href={APP_STORE_URL}>{messages["hero.download"]} <span>↗</span></a><small>{messages["cta.requirements"]}</small></section>
+    <footer><div className="brand"><Image src="/web/icon-32.png" alt="" width={30} height={30} /><span>{messages["app.name"]}</span></div><p>{messages["footer.tagline"]}</p><div><Link href="/privacy">{messages["footer.privacy"]}</Link><Link href="/terms">{messages["footer.terms"]}</Link><Link href="/contact">{messages["footer.support"]}</Link></div><small>{messages["footer.copyright"]}</small></footer>
   </main>;
 }

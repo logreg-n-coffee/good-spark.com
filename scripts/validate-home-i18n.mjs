@@ -8,7 +8,14 @@ const messages = JSON.parse(readFileSync(join(root, "app/home-messages.json"), "
 const tonePacks = JSON.parse(readFileSync(join(root, "app/tone-packs.json"), "utf8"));
 const sceneSource = readFileSync(join(root, "app/components/ProductScenes.tsx"), "utf8");
 const homeSource = readFileSync(join(root, "app/components/HomePage.tsx"), "utf8");
-const layoutSource = readFileSync(join(root, "app/layout.tsx"), "utf8");
+const defaultLayoutSource = readFileSync(join(root, "app/(default)/layout.tsx"), "utf8");
+const localeLayoutSource = readFileSync(join(root, "app/[locale]/layout.tsx"), "utf8");
+const siteShellSource = readFileSync(join(root, "app/site-shell.ts"), "utf8");
+const localizedHomeSource = readFileSync(join(root, "app/components/LocalizedHome.tsx"), "utf8");
+const i18nSource = readFileSync(join(root, "app/home-i18n.ts"), "utf8");
+const localeRouteSource = readFileSync(join(root, "app/[locale]/page.tsx"), "utf8");
+const metadataSource = readFileSync(join(root, "app/home-metadata.ts"), "utf8");
+const sitemapSource = readFileSync(join(root, "app/sitemap.ts"), "utf8");
 
 const canonicalLocales = [
   "en", "ja", "es", "zh-Hans", "ko", "de", "fr", "pt-BR", "zh-Hant", "it", "ru",
@@ -88,10 +95,27 @@ assert.match(messages.en["live.available"], /available now on iPhone/i, "the Eng
 assert.ok(!futureEnglishReleaseClaim.test(englishReleaseCopy), "English Live Spark release copy must not retain preview or future-tense claims");
 assert.ok(homeSource.includes('messages["live.available"]'), "HomePage must render the released Live Spark availability label");
 assert.ok(!homeSource.includes('messages["live.upcoming"]'), "HomePage must not render the pre-release Live Spark label");
-assert.match(layoutSource, /"softwareVersion": "1\.26\.0"/, "structured data must advertise the released app version");
-assert.ok(layoutSource.includes('"Live Spark Live Activities"'), "structured data must advertise Live Spark Live Activities");
-assert.ok(layoutSource.includes('"Dynamic Island support"'), "structured data must advertise Dynamic Island support");
-assert.ok(!futureEnglishReleaseClaim.test(layoutSource), "metadata must not retain preview or future-tense Live Spark claims");
+assert.match(localizedHomeSource, /softwareVersion: "1\.26\.0"/, "localized structured data must advertise the released app version");
+assert.ok(!futureEnglishReleaseClaim.test(siteShellSource), "metadata must not retain preview or future-tense Live Spark claims");
+
+const localizedAppNames = [...i18nSource.matchAll(/appName: "([^"]+)"/g)].map((match) => match[1]);
+assert.equal(localizedAppNames.length, canonicalLocales.length, "every locale must define one app display name");
+assert.equal(localizedAppNames[0], "Good Spark", "English must retain the canonical app name");
+assert.ok(localizedAppNames.slice(1).every((name) => name !== "Good Spark"), "non-English locales must use localized display names");
+assert.ok(localizedAppNames.every((name) => name.length <= 18), "display names must stay compact enough for product UI");
+assert.ok(homeSource.includes('messages["app.name"]'), "homepage chrome must render the localized app name");
+assert.ok(homeSource.includes('<p className="hero-product-name">{messages["app.name"]}</p>'), "homepage hero must visibly render the localized app name");
+assert.ok(sceneSource.includes('messages["app.name"]'), "product scenes must render the localized app name");
+assert.ok(!/>Good Spark</.test(homeSource), "homepage chrome must not hardcode the English display name");
+assert.ok(!/>Good Spark</.test(sceneSource), "product scenes must not hardcode the English display name");
+
+assert.ok(localeRouteSource.includes("generateStaticParams"), "localized homepage routes must be statically generated");
+assert.ok(localeRouteSource.includes("generateMetadata"), "localized homepage routes must emit localized metadata");
+assert.ok(defaultLayoutSource.includes('<html lang="en"'), "the canonical root layout must declare English in static HTML");
+assert.ok(localeLayoutSource.includes('<html lang={locale} dir={localeMeta.direction}'), "localized root layouts must declare language and direction in static HTML");
+assert.ok(metadataSource.includes("languageAlternates"), "localized metadata must publish language alternates");
+assert.ok(metadataSource.includes("openGraphLocale"), "localized metadata must publish the matching Open Graph locale");
+assert.ok(sitemapSource.includes("LOCALES.map"), "the sitemap must include every localized homepage");
 
 for (const kind of sceneKinds) {
   assert.ok(sceneSource.includes(`"${kind}"`), `ProductScenes must render the ${kind} scene`);
