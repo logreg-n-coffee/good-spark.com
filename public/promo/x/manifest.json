@@ -1,0 +1,150 @@
+{
+  "width": 1600,
+  "height": 900,
+  "assets": [
+    {
+      "locale": "en",
+      "appName": "Good Spark",
+      "overview": {
+        "path": "/promo/x/en/overview.png",
+        "alt": "Good Spark. A small spark, right when you need it. Made for Mac, iPhone & iPad. 460 affirmations; 22 languages."
+      },
+      "live": {
+        "path": "/promo/x/en/live.png",
+        "alt": "Good Spark. A good thought that stays with you. On your Lock Screen. In the Dynamic Island."
+      }
+    },
+    {
+      "locale": "ja",
+      "appName": "こころの灯り",
+      "overview": {
+        "path": "/promo/x/ja/overview.png",
+        "alt": "こころの灯り. 必要なときに、小さなきっかけを。 Mac・iPhone・iPad対応. 460 アファメーション; 22 言語."
+      },
+      "live": {
+        "path": "/promo/x/ja/live.png",
+        "alt": "こころの灯り. そばに残る、ひとつの良い言葉。 ロック画面に. Dynamic Islandに."
+      }
+    },
+    {
+      "locale": "es",
+      "appName": "Buena Chispa",
+      "overview": {
+        "path": "/promo/x/es/overview.png",
+        "alt": "Buena Chispa. Una pequeña chispa, justo cuando la necesitas. Para Mac, iPhone y iPad. 460 afirmaciones; 22 idiomas."
+      },
+      "live": {
+        "path": "/promo/x/es/live.png",
+        "alt": "Buena Chispa. Un buen pensamiento que se queda contigo. En la pantalla bloqueada. En Dynamic Island."
+      }
+    },
+    {
+      "locale": "pt-BR",
+      "appName": "Pequena Faísca",
+      "overview": {
+        "path": "/promo/x/pt-BR/overview.png",
+        "alt": "Pequena Faísca. Uma pequena faísca, bem quando você precisa. Feito para Mac, iPhone e iPad. 460 afirmações; 22 idiomas."
+      },
+      "live": {
+        "path": "/promo/x/pt-BR/live.png",
+        "alt": "Pequena Faísca. Um bom pensamento que fica com você. Na Tela Bloqueada. Na Dynamic Island."
+      }
+    },
+    {
+      "locale": "fr",
+      "appName": "Petite Étincelle",
+      "overview": {
+        "path": "/promo/x/fr/overview.png",
+        "alt": "Petite Étincelle. Une petite étincelle, au bon moment. Pour Mac, iPhone et iPad. 460 affirmations; 22 langues."
+      },
+      "live": {
+        "path": "/promo/x/fr/live.png",
+        "alt": "Petite Étincelle. Une belle pensée qui reste avec toi. Sur l’écran verrouillé. Dans la Dynamic Island."
+      }
+    },
+    {
+      "locale": "de",
+      "appName": "Zuversicht",
+      "overview": {
+        "path": "/promo/x/de/overview.png",
+        "alt": "Zuversicht. Ein kleiner Funke, genau im richtigen Moment. Für Mac, iPhone und iPad. 460 Affirmationen; 22 Sprachen."
+      },
+      "live": {
+        "path": "/promo/x/de/live.png",
+        "alt": "Zuversicht. Ein guter Gedanke, der bei dir bleibt. Auf dem Sperrbildschirm. In der Dynamic Island."
+      }
+    },
+    {
+      "locale": "ko",
+      "appName": "작은 빛",
+      "overview": {
+        "path": "/promo/x/ko/overview.png",
+        "alt": "작은 빛. 필요한 순간, 작은 불꽃 하나. Mac, iPhone, iPad용. 460 개의 확언; 22 개 언어."
+      },
+      "live": {
+        "path": "/promo/x/ko/live.png",
+        "alt": "작은 빛. 곁에 머무는 좋은 생각 하나. 잠금 화면에서. Dynamic Island에서."
+      }
+    },
+    {
+      "locale": "zh-Hant",
+      "appName": "點點微光",
+      "overview": {
+        "path": "/promo/x/zh-Hant/overview.png",
+        "alt": "點點微光. 在需要的時候，點亮一點微光。 支援 Mac、iPhone 與 iPad. 460 句肯定語; 22 種語言."
+      },
+      "live": {
+        "path": "/promo/x/zh-Hant/live.png",
+        "alt": "點點微光. 讓一個好念頭陪在身邊。 顯示在鎖定畫面. 顯示在動態島."
+      }
+    },
+    {
+      "locale": "ar",
+      "appName": "شرارة أمل",
+      "overview": {
+        "path": "/promo/x/ar/overview.png",
+        "alt": "شرارة أمل. شرارة صغيرة، في اللحظة التي تحتاجها. مصمم لـ Mac وiPhone وiPad. 460 توكيد; 22 لغة."
+      },
+      "live": {
+        "path": "/promo/x/ar/live.png",
+        "alt": "شرارة أمل. فكرة جيدة تبقى معك. على شاشة القفل. في Dynamic Island."
+      }
+    },
+    {
+      "locale": "hi",
+      "appName": "नई किरण",
+      "overview": {
+        "path": "/promo/x/hi/overview.png",
+        "alt": "नई किरण. एक छोटी-सी चमक, ठीक जब आपको ज़रूरत हो। Mac, iPhone और iPad के लिए. 460 अफ़र्मेशन; 22 भाषाएँ."
+      },
+      "live": {
+        "path": "/promo/x/hi/live.png",
+        "alt": "नई किरण. एक अच्छी सोच जो साथ रहे। लॉक स्क्रीन पर. Dynamic Island में."
+      }
+    },
+    {
+      "locale": "id",
+      "appName": "Cahaya Hati",
+      "overview": {
+        "path": "/promo/x/id/overview.png",
+        "alt": "Cahaya Hati. Percikan kecil, tepat saat kamu membutuhkannya. Untuk Mac, iPhone, dan iPad. 460 afirmasi; 22 bahasa."
+      },
+      "live": {
+        "path": "/promo/x/id/live.png",
+        "alt": "Cahaya Hati. Pikiran baik yang tetap bersamamu. Di Layar Terkunci. Di Dynamic Island."
+      }
+    },
+    {
+      "locale": "tr",
+      "appName": "Umut Işığı",
+      "overview": {
+        "path": "/promo/x/tr/overview.png",
+        "alt": "Umut Işığı. Tam ihtiyacın olduğunda küçük bir kıvılcım. Mac, iPhone ve iPad için. 460 olumlama; 22 dil."
+      },
+      "live": {
+        "path": "/promo/x/tr/live.png",
+        "alt": "Umut Işığı. Seninle kalan güzel bir düşünce. Kilit Ekranı’nda. Dynamic Island’da."
+      }
+    }
+  ]
+}

@@ -13,6 +13,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "promo:generate": "node scripts/generate-x-promo.mjs",
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
     "test": "npm run test:i18n",
