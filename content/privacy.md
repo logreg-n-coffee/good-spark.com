@@ -1,272 +1,96 @@
 # Privacy Policy for Good Spark
 
-**Last Updated: January 15, 2026**
+**Last Updated: November 16, 2026**
+
+---
 
 ## Overview
 
-Good Spark is committed to protecting your privacy. This privacy policy explains how we handle data in our macOS menu bar application.
+Good Spark is a daily-affirmations app for iPhone, iPad and Mac. This policy explains what happens to your information when you use it.
 
 > **Our Privacy Promise**
 >
-> Good Spark does **NOT** collect, store, or transmit any personal data.
->
-> We believe your affirmations and usage patterns are private. We have built Good Spark with privacy as a core principle.
+> Good Spark has no accounts, no ads, no analytics and no tracking. What you write or photograph in the app stays on your device.
 
 ---
 
 ## What We Don't Collect
 
 - No user accounts or registration
-- No analytics or tracking
-- No user identification
+- No analytics, advertising or tracking SDKs
+- No user or device identifiers
 - No location data
-- No device information
 - No usage statistics
-- No email addresses
-- No names or contact information
-- No IP addresses
-- No crash reports (unless you explicitly send them)
+- No contacts, health or financial information
+
+The App Store privacy label for Good Spark is "Data Not Collected".
 
 ---
 
-## Data Storage
+## Data Stored on Your Device
 
-### Local Storage Only
+Everything below is stored only on your device, using standard Apple storage. We cannot see any of it.
 
-All data is stored locally on your Mac using standard macOS APIs:
+- **Settings and history**: your preferences, the affirmations you have seen, favorites, streaks, and your first name if you choose to enter one for greetings.
+- **Reflections**: the words you write about an affirmation and any photo you add to it. Photos are re-encoded on your device when you add them, which removes camera metadata such as the location where the photo was taken. Reflections are kept in the app's private storage, protected while your device is locked, and included in your device backups (for example iCloud Backup, if you use it). Deleting a reflection, or the app, removes them.
+- **Widgets and Live Activities**: the iPhone and iPad app shares the current affirmation with its widgets through an App Group container on the same device. Live Activities are started and updated by the app on your device; no push service is used.
+- **Notifications**: daily affirmations are scheduled as local notifications on your device.
+- **Purchase status**: managed by Apple's StoreKit.
 
-| Data Type | Storage Location |
-|-----------|-----------------|
-| User Preferences | macOS UserDefaults |
-| Affirmation History | Local device storage |
-| Favorite Affirmations | Local device storage |
-| Premium Content Cache | Local device storage |
-| Purchase Status | Apple's StoreKit |
+Good Spark does not sync this data to any cloud service of ours.
 
-**We have zero access to any of this data.**
+---
 
-### No Cloud Sync
+## Camera and Photos
 
-Good Spark does not sync your data to any cloud service. Your history, favorites, and preferences exist only on your Mac.
+- **Camera**: used only when you tap "Take Photo" to add a photo to a reflection. The photo is stored with that reflection on your device.
+- **Choosing a photo**: uses the system photo picker, which gives the app only the photo you pick. Good Spark does not read your photo library.
+- **Saving images**: when you save a share card, Good Spark asks for permission to add images to your photo library. It cannot read your library.
+
+---
+
+## Sharing
+
+When you share a card or a reflection print, the image or text goes to the app or service you choose through the iOS or macOS share sheet, a link to that service, or the clipboard. Shared prints contain your photo and the affirmation, never the words of your reflection. What happens next is governed by that service's privacy policy.
+
+---
+
+## Feedback
+
+"Send Feedback" opens a message in your own email app, addressed to support@good-spark.com, which you can read and edit before sending. The app itself sends nothing. If you send it, we receive your email address and what you wrote, and use them only to read and reply to your message.
+
+---
+
+## Ratings
+
+Good Spark may show Apple's standard rating prompt. Ratings and reviews are handled by Apple; we do not see who rated the app.
 
 ---
 
 ## In-App Purchases
 
-Good Spark offers a premium unlock for additional tone packs.
-
-### What Apple Handles
-
-- Payment processing
-- Purchase receipt validation
-- Transaction history
-- Restore purchases functionality
-
-### What We Know
-
-We only know that a purchase was made (via Apple's StoreKit API). We do **NOT** receive:
-
-- Your name
-- Your email address
-- Your payment information
-- Any personally identifiable information
-
-All purchase data is handled exclusively by Apple according to their [Apple Privacy Policy](https://www.apple.com/legal/privacy/).
+Purchases are processed by Apple. We learn only whether Premium is active on your Apple Account, through StoreKit. We do not receive your name, email address or payment information. See the [Apple Privacy Policy](https://www.apple.com/legal/privacy/).
 
 ---
 
 ## Content Updates
 
-Good Spark fetches premium content updates from our servers when you have purchased the premium unlock.
-
-### Content Delivery
-
-- Premium affirmations are served via GitHub CDN
-- No user identification is sent with requests
-- No authentication tokens are required
-- No cookies are used
-- No tracking parameters are included
-
-### What Our Servers See
-
-When fetching premium content, standard HTTP requests are made to:
-
-```
-https://raw.githubusercontent.com/logreg-n-coffee/spark/
-```
-
-These requests may contain:
-- HTTP headers (standard browser information)
-- ETag for caching optimization
-
-These requests do **NOT** contain:
-- Any personal information
-- Any device identifiers
-- Any user identifiers
-- Any usage data
-
-GitHub's CDN may log standard HTTP access logs according to their [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement).
+Good Spark downloads affirmations and the pack catalog from our content service at `vibecheck-api.vercel.app`, hosted by Vercel. Requests contain the language you use, the content tier (free or Premium) and the packs requested. They contain no account, device or user identifier. Like any web server, the hosting provider receives your IP address and standard request headers to deliver the response and protect the service. See the [Vercel Privacy Policy](https://vercel.com/legal/privacy-policy).
 
 ---
 
-## Third-Party Services
+## Children
 
-Good Spark uses the following third-party services:
-
-### 1. Apple StoreKit
-
-- **Purpose:** In-app purchase management
-- **Data Processed:** Purchase transactions (handled by Apple)
-- **Privacy Policy:** [Apple Privacy Policy](https://www.apple.com/legal/privacy/)
-
-### 2. GitHub CDN
-
-- **Purpose:** Premium content delivery
-- **Data Processed:** Standard HTTP requests for content files
-- **Privacy Policy:** [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement)
-
-### 3. Vercel Edge Functions (Optional)
-
-- **Purpose:** Dynamic content catalog (future feature)
-- **Data Processed:** API requests for content metadata
-- **Privacy Policy:** [Vercel Privacy Policy](https://vercel.com/legal/privacy-policy)
-
-**None of these services receive personal user data from Good Spark.**
-
----
-
-## Permissions
-
-Good Spark requires the following macOS permissions:
-
-### Network Access
-
-- **Purpose:** Download premium content updates
-- **Frequency:** Once every 24 hours (if premium purchased)
-- **Can be blocked:** Yes, app works offline with cached content
-
-### Notifications (Optional)
-
-- **Purpose:** Daily affirmation reminders (if enabled by user)
-- **Controlled by:** macOS System Preferences → Notifications
-- **Data sent:** None (local notifications only)
-
-### Accessibility (Not Required)
-
-- Good Spark does NOT require accessibility permissions
-- Global hotkey uses standard macOS keyboard events
-
----
-
-## Data Retention
-
-Since we don't collect any data, we don't retain any data.
-
-### Your Local Data
-
-You control all data stored on your device:
-
-- **Clear History:** Delete from History view
-- **Remove Favorites:** Unfavorite any affirmation
-- **Reset Settings:** Change in Settings panel
-- **Complete Removal:** Uninstall the app
-
-Uninstalling Good Spark removes all local data from your Mac.
-
----
-
-## Children's Privacy
-
-Good Spark is rated 4+ and is safe for all ages. We do not knowingly collect data from children or adults. We don't collect data from anyone.
-
----
-
-## International Users
-
-Good Spark is available worldwide. Since we don't collect any personal data, there are no international data transfer concerns.
-
----
-
-## Your Rights
-
-Under GDPR, CCPA, and other privacy regulations, you have certain rights regarding your data.
-
-Since we don't collect any personal data, these concerns don't apply:
-
-- **Right to access:** There is no data to access
-- **Right to deletion:** There is no data to delete
-- **Right to portability:** There is no data to export
-- **Right to correct:** There is no data to correct
-- **Right to opt-out:** There is nothing to opt out of
-
-Your local data (history, favorites, preferences) is already under your complete control.
-
----
-
-## Security
-
-While we don't collect data, we still take security seriously:
-
-- **App Sandbox:** Good Spark runs in Apple's App Sandbox
-- **Code Signing:** Verified with Apple Developer certificate
-- **Minimal Permissions:** Only requests necessary permissions
-- **HTTPS Only:** All network requests use encrypted connections
-- **No Third-Party SDKs:** No analytics or tracking frameworks
+Good Spark is suitable for all ages and does not knowingly collect personal information from anyone.
 
 ---
 
 ## Changes to This Policy
 
-We will update this privacy policy if our data practices change. We will never start collecting personal data without:
-
-1. Updating this privacy policy
-2. Releasing a new version of the app
-3. Clearly communicating changes to users
-
-You can always find the latest version at:
-
-- In-app: Settings → Privacy Policy
-- Online: [GitHub Repository](https://github.com/logreg-n-coffee/spark/blob/main/docs/PRIVACY_POLICY.md)
+If this policy changes, we will update the "Last Updated" date above and publish the new version at https://good-spark.com/privacy.
 
 ---
 
 ## Contact Us
 
-If you have questions about this privacy policy or Good Spark's data practices:
-
-- **Contact:** [Contact Good Spark support](/contact)
-- **GitHub Issues:** [https://github.com/logreg-n-coffee/spark/issues](https://github.com/logreg-n-coffee/spark/issues)
-- **Website:** [https://good-spark.com](https://good-spark.com)
-
-We typically respond within 24-48 hours.
-
----
-
-## Legal Compliance
-
-This privacy policy complies with:
-
-- Apple App Store Review Guidelines
-- General Data Protection Regulation (GDPR)
-- California Consumer Privacy Act (CCPA)
-- Children's Online Privacy Protection Act (COPPA)
-
----
-
-## Summary
-
-**TL;DR:**
-
-- We don't collect any data
-- Everything is stored locally on your Mac
-- We can't see your history, favorites, or usage
-- Purchases are handled by Apple
-- Premium content is delivered via CDN
-
-**Questions?** Contact us anytime.
-
----
-
-*Privacy Policy Version: 1.0*
-*Effective Date: January 15, 2026*
-*Last Reviewed: January 15, 2026*
+- **Email**: support@good-spark.com
