@@ -22,6 +22,12 @@ const APP_STORE_URL = "https://apps.apple.com/app/good-spark-affirmations/id6758
 const PACK_EMOJI = ["✨", "💅", "🧘", "🧑‍💻", "💪", "💖", "🎯", "🌿", "😂", "🌸", "🎨", "🌙"] as const;
 const FEATURE_ICONS = ["⌁", "✦", "♡", "↗"] as const;
 
+const REFLECT_SCENES: ReadonlyArray<{ kind: ProductSceneKind; title: "reflect.scratch.title" | "reflect.print.title" | "reflect.help.title"; body: "reflect.scratch.body" | "reflect.print.body" | "reflect.help.body" }> = [
+  { kind: "scratch", title: "reflect.scratch.title", body: "reflect.scratch.body" },
+  { kind: "print", title: "reflect.print.title", body: "reflect.print.body" },
+  { kind: "composer", title: "reflect.help.title", body: "reflect.help.body" },
+];
+
 const GALLERY_SCENES: ReadonlyArray<{ kind: ProductSceneKind; caption: "gallery.popover" | "gallery.welcome" | "gallery.settings" | "gallery.history" }> = [
   { kind: "popover", caption: "gallery.popover" },
   { kind: "welcome", caption: "gallery.welcome" },
@@ -73,7 +79,7 @@ export function HomePage({
 
   const metrics = [
     ["12", messages["metric.tonePacks"]],
-    ["460", messages["metric.affirmations"]],
+    ["660", messages["metric.affirmations"]],
     ["22", messages["metric.languages"]],
     [messages["metric.no"], messages["metric.noAccount"]],
   ];
@@ -88,7 +94,9 @@ export function HomePage({
   const privacyPoints = [
     messages["privacy.bullet.noData"],
     messages["privacy.bullet.noAccount"],
+    messages["privacy.bullet.iCloud"],
     messages["privacy.bullet.onDevice"],
+    messages["privacy.bullet.onDeviceAI"],
     messages["privacy.bullet.offline"],
   ];
 
@@ -100,6 +108,7 @@ export function HomePage({
       <nav aria-label={messages["aria.nav"]}>
         <a href="#why">{messages["nav.why"]}</a>
         <a href="#inside">{messages["nav.inside"]}</a>
+        <a href="#reflect">{messages["nav.reflect"]}</a>
         <a href="#packs">{messages["nav.packs"]}</a>
         <a href="#live">{messages["nav.live"]}</a>
         <a href="#privacy">{messages["nav.privacy"]}</a>
@@ -139,6 +148,29 @@ export function HomePage({
         <ProductScene kind={kind} messages={messages} tonePacks={tonePacks} />
         <figcaption><span>0{index + 1}</span>{messages[caption]}</figcaption>
       </figure>)}</div>
+    </section>
+
+    <section className="section reflect-section" id="reflect">
+      <div className="section-heading split"><div><p className="eyebrow">{messages["reflect.eyebrow"]}</p><p className="live-available"><span aria-hidden="true">✶</span>{messages["reflect.available"]}</p><h2>{messages["reflect.title"]}</h2></div><p>{messages["reflect.body"]}</p></div>
+      <div className="reflect-grid">{REFLECT_SCENES.map(({ kind, title, body }) => <figure key={kind}>
+        <ProductScene kind={kind} messages={messages} tonePacks={tonePacks} />
+        <figcaption><h3>{messages[title]}</h3><p>{messages[body]}</p></figcaption>
+      </figure>)}</div>
+    </section>
+
+    <section className="section sync-section" id="sync">
+      <div className="sync-layout">
+        <div className="sync-copy">
+          <p className="eyebrow">{messages["sync.eyebrow"]}</p>
+          <h2>{messages["sync.title"]}</h2>
+          <p>{messages["sync.body"]}</p>
+          <div className="sync-points">
+            <article><span aria-hidden="true">↻</span><div><h3>{messages["sync.fresh.title"]}</h3><p>{messages["sync.fresh.body"]}</p></div></article>
+            <article><span aria-hidden="true">◎</span><div><h3>{messages["sync.private.title"]}</h3><p>{messages["sync.private.body"]}</p></div></article>
+          </div>
+        </div>
+        <ProductScene kind="sync" messages={messages} tonePacks={tonePacks} />
+      </div>
     </section>
 
     <section className="section packs" id="packs">

@@ -1,15 +1,17 @@
 # Good Spark Website (good-spark.com)
 
-Official website for **Good Spark** — daily affirmations for iPhone, iPad, the Lock Screen, Dynamic Island, widgets, and the Mac menu bar.
+Official website for **Good Spark** — daily affirmations for iPhone, iPad, the Lock Screen, Dynamic Island, widgets, and the Mac menu bar, with scratch-off cards, reflections kept as instant prints, and iCloud sync.
 
 ## Overview
 
-This is the static marketing and support website for Good Spark. The homepage and its six product scenes are localized in the same 22 languages as the app, including right-to-left layout for Arabic.
+This is the static marketing and support website for Good Spark. The homepage and its ten product scenes are localized in the same 22 languages as the app, including right-to-left layout for Arabic.
 
 ## Features
 
 - **Localized homepage**: 22-language picker with automatic browser-language selection
-- **Localized product scenes**: Mac popover, welcome, settings, history, Lock Screen, and Dynamic Island
+- **Localized product scenes**: Mac popover, welcome, settings, history, Lock Screen, Dynamic Island, scratch-off card, instant print, reflection composer, and iCloud sync across iPhone, iPad and Mac (scene labels reuse the app's own String Catalog wording)
+- **Rituals and reflections**: scratch-off cards, instant prints, daily prompts, Speak, and on-device writing help (iPhone and iPad)
+- **iCloud sync**: History and favorites across iPhone, iPad and Mac; reflections across iPhone and iPad
 - **Live Spark**: Current Lock Screen Live Activity and Dynamic Island support on iPhone
 - **Tone packs**: All 12 packs, localized in every supported language
 - **Support pages**: Privacy policy, terms, and contact

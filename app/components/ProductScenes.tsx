@@ -8,6 +8,10 @@ export const PRODUCT_SCENE_KINDS = [
   "history",
   "lock-screen",
   "dynamic-island",
+  "scratch",
+  "print",
+  "composer",
+  "sync",
 ] as const;
 
 export type ProductSceneKind = (typeof PRODUCT_SCENE_KINDS)[number];
@@ -137,6 +141,75 @@ function DynamicIslandScene({ messages }: SceneData) {
   </div>;
 }
 
+function ScratchScene({ messages, tonePacks }: SceneData) {
+  return <div className="scene-phone-shell scene-scratch-phone">
+    <div className="scene-phone-status"><span>9:41</span><span>▰ ᯤ</span></div>
+    <div className="scene-scratch-card">
+      <blockquote>{messages["scene.affirmation.one"]}</blockquote>
+      <svg className="scene-foil" viewBox="0 0 100 133" preserveAspectRatio="none" aria-hidden="true">
+        <defs>
+          <linearGradient id="scene-foil-sheen" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stopColor="#d9d4dc" /><stop offset=".35" stopColor="#f8f5f9" /><stop offset=".6" stopColor="#b8b0bd" /><stop offset="1" stopColor="#ece8ef" />
+          </linearGradient>
+          <mask id="scene-foil-scratched">
+            <rect width="100" height="133" fill="white" />
+            <path d="M10 44 C 30 34, 54 54, 90 40 M6 62 C 30 72, 60 50, 94 64 M10 80 C 36 72, 62 90, 90 78" stroke="black" strokeWidth="17" strokeLinecap="round" fill="none" />
+          </mask>
+        </defs>
+        <rect width="100" height="133" fill="url(#scene-foil-sheen)" mask="url(#scene-foil-scratched)" />
+      </svg>
+      <span className="scene-foil-label">✦ {messages["scene.scratch"]}</span>
+    </div>
+    <div className="scene-scratch-actions"><b>{messages["scene.reveal"]}</b><small>✨ {tonePacks[0]}</small></div>
+  </div>;
+}
+
+function PrintScene({ messages }: SceneData) {
+  return <div className="scene-print-stage">
+    <div className="scene-print">
+      <div className="scene-print-photo"><i className="scene-print-sun" /><i className="scene-print-hill" /><i className="scene-print-veil" /></div>
+      <p>{messages["scene.affirmation.two"]}</p>
+      <small>{messages["scene.print"]}</small>
+    </div>
+    <span className="scene-print-hint">{messages["scene.develop"]}</span>
+  </div>;
+}
+
+function ComposerScene({ messages }: SceneData) {
+  return <div className="scene-composer-stage">
+    <div className="scene-composer">
+      <small>{messages["scene.reflection"]}</small>
+      <blockquote>{messages["scene.affirmation.three"]}</blockquote>
+      <div className="scene-prompt"><b>{messages["scene.prompt"]}</b><span>↻ {messages["scene.newPrompt"]}</span></div>
+      <div className="scene-note"><span>{messages["scene.placeholder"]}</span></div>
+      <div className="scene-tools"><b>◉ {messages["scene.speak"]}</b><b>✦ {messages["scene.ideas"]}</b><b>✎ {messages["scene.keepGoing"]}</b></div>
+    </div>
+  </div>;
+}
+
+function SyncScene({ messages, tonePacks }: SceneData) {
+  const rows = [
+    ["✨", messages["scene.affirmation.one"], tonePacks[0], true],
+    ["🌿", messages["scene.affirmation.two"], tonePacks[7], false],
+    ["🎯", messages["scene.affirmation.three"], tonePacks[6], true],
+  ] as const;
+  const list = (count: number) => <div className="scene-sync-list">
+    {rows.slice(0, count).map(([icon, affirmation, pack, favorite]) => <article key={affirmation}>
+      <i aria-hidden="true">{icon}</i><div><strong>{affirmation}</strong><small>{pack}</small></div><span aria-hidden="true">{favorite ? "♥" : "♡"}</span>
+    </article>)}
+  </div>;
+
+  return <div className="scene-sync-stage">
+    <div className="scene-sync-mac">
+      <div className="scene-menubar"><strong><SparkMark /> {messages["app.name"]}</strong><span>10:30</span></div>
+      <div className="scene-window scene-sync-window"><WindowDots /><h3>{messages["scene.historyShort"]}</h3>{list(3)}</div>
+    </div>
+    <div className="scene-sync-ipad"><h3>{messages["scene.historyShort"]}</h3>{list(3)}</div>
+    <div className="scene-sync-phone"><h3>{messages["scene.historyShort"]}</h3>{list(3)}</div>
+    <div className="scene-sync-badge"><span aria-hidden="true">☁︎</span>{messages["scene.sync"]}<Toggle enabled /></div>
+  </div>;
+}
+
 export function ProductScene({ kind, messages, tonePacks }: ProductSceneProps) {
   const data = { messages, tonePacks };
   let scene: ReactNode;
@@ -148,6 +221,10 @@ export function ProductScene({ kind, messages, tonePacks }: ProductSceneProps) {
     case "history": scene = <HistoryScene {...data} />; break;
     case "lock-screen": scene = <LockScreenScene {...data} />; break;
     case "dynamic-island": scene = <DynamicIslandScene {...data} />; break;
+    case "scratch": scene = <ScratchScene {...data} />; break;
+    case "print": scene = <PrintScene {...data} />; break;
+    case "composer": scene = <ComposerScene {...data} />; break;
+    case "sync": scene = <SyncScene {...data} />; break;
   }
 
   return <div className={`product-scene product-scene-${kind}`} aria-hidden="true">{scene}</div>;
