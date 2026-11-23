@@ -60,7 +60,7 @@ https://good-spark.com/ja
 ### Spanish
 
 ```text
-Dale a cada día su momento. ✨ Buena Chispa ahora tiene tarjetas para raspar, reflexiones que guardas como fotos instantáneas, una pregunta nueva cada día y ayuda para escribir en tu dispositivo. Todo se sincroniza con tu propio iCloud.
+Dale a cada día su momento. ✨ Buena Chispa estrena tarjetas para raspar, reflexiones en foto instantánea, una pregunta nueva cada día y ayuda para escribir que funciona en tu dispositivo. Historial, favoritos y reflexiones se sincronizan con tu iCloud.
 
 https://good-spark.com/es
 ```
@@ -68,7 +68,7 @@ https://good-spark.com/es
 ### Portuguese — Brazil
 
 ```text
-Transforme isso num momento. ✨ A Pequena Faísca agora tem cartões raspadinha, reflexões guardadas como fotos instantâneas, uma pergunta nova por dia e ajuda para escrever no dispositivo. Tudo sincroniza pelo seu iCloud.
+Transforme isso num momento. ✨ A Pequena Faísca agora tem cartões raspadinha, reflexões guardadas como fotos instantâneas, uma pergunta nova por dia e ajuda para escrever que roda no aparelho. Histórico, favoritas e reflexões sincronizam pelo seu iCloud.
 
 https://good-spark.com/pt-BR
 ```
@@ -76,7 +76,7 @@ https://good-spark.com/pt-BR
 ### French
 
 ```text
-Fais-en un moment à toi. ✨ Petite Étincelle propose des cartes à gratter, des réflexions gardées en tirages instantanés, une nouvelle question chaque jour et une aide à l’écriture sur l’appareil. Tout se synchronise via ton iCloud.
+Fais-en un moment à toi. ✨ Petite Étincelle propose des cartes à gratter, des réflexions en tirage instantané, une nouvelle question chaque jour et une aide à l’écriture sur l’appareil. Historique, favoris et réflexions se synchronisent via ton iCloud.
 
 https://good-spark.com/fr
 ```
@@ -84,7 +84,7 @@ https://good-spark.com/fr
 ### German
 
 ```text
-Mach einen Moment daraus. ✨ „Zuversicht“ hat jetzt Rubbelkarten, Reflexionen als Sofortbilder, jeden Tag eine neue Frage und Schreibhilfe direkt auf dem Gerät. Verlauf, Favoriten und Reflexionen synchronisieren über dein eigenes iCloud.
+Mach einen besonderen Moment daraus. ✨ „Zuversicht“ hat jetzt Rubbelkarten, Reflexionen als Sofortbilder, jeden Tag eine neue Frage und Schreibhilfe direkt auf dem Gerät. Verlauf, Favoriten und Reflexionen synchronisieren über deine eigene iCloud.
 
 https://good-spark.com/de
 ```
@@ -108,7 +108,7 @@ https://good-spark.com/zh-Hant
 ### Arabic
 
 ```text
-لحظة تستحق أن تبقى. ✨ في شرارة أمل الآن بطاقات الكشط، وخواطر تُحفظ في صور فورية، وسؤال جديد كل يوم، ومساعدة في الكتابة على الجهاز نفسه. ويتزامن السجل والمفضلة والخواطر عبر حساب iCloud الخاص بك.
+لحظة تستحق أن تبقى. ✨ في شرارة أمل الآن بطاقات الكشط، وخواطر تُحفظ في صور فورية، وسؤال جديد كل يوم، ومساعدة في الكتابة تعمل على الجهاز نفسه. ويتزامن السجل والمفضلة والخواطر عبر حساب iCloud الخاص بك.
 
 https://good-spark.com/ar
 ```
@@ -124,7 +124,7 @@ https://good-spark.com/hi
 ### Indonesian
 
 ```text
-Jadikan sebuah momen. ✨ Cahaya Hati kini punya kartu gosok, refleksi yang disimpan sebagai cetakan instan, pertanyaan baru setiap hari, dan bantuan menulis di perangkat. Riwayat, favorit, dan refleksi tersinkron lewat iCloud milikmu.
+Jadikan momen yang berarti. ✨ Cahaya Hati kini punya kartu gosok, refleksi yang disimpan sebagai cetakan instan, pertanyaan baru setiap hari, dan bantuan menulis di perangkat. Riwayat, favorit, dan refleksi tersinkron lewat iCloud milikmu.
 
 https://good-spark.com/id
 ```
