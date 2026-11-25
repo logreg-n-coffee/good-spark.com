@@ -1,6 +1,6 @@
 # Terms of Use (EULA) for Good Spark
 
-**Last Updated: March 9, 2026**
+**Last Updated: November 24, 2026**
 
 ## 1. Agreement
 
@@ -29,12 +29,14 @@ Good Spark offers two premium purchase options:
 | **Price** | $4.99 per year |
 | **Free Trial** | 1-week free trial for new subscribers |
 | **Renewal** | Auto-renews annually unless cancelled |
-| **Billing** | Charged to your Apple ID account at confirmation of purchase, or at the end of the free trial period if a trial is offered and you do not cancel before it ends. |
+| **Billing** | Charged to your Apple Account at confirmation of purchase, or at the end of the free trial period if a trial is offered and you do not cancel before it ends. |
 
 - **Auto-Renewal:** Your subscription will automatically renew at the end of each subscription period unless you cancel at least 24 hours before the end of the current period.
 - **Free Trial:** If offered, the free trial period lasts 1 week. If you do not cancel before the trial ends, you will be automatically charged the subscription price.
-- **Cancellation:** You can manage or cancel your subscription at any time in **System Settings → Apple ID → Subscriptions** on macOS, or via the App Store.
-- Payment will be charged to your Apple ID account at confirmation of purchase, or at the end of the free trial period if a trial is offered and you do not cancel before it ends.
+- **Cancellation:** You can manage or cancel your subscription at any time:
+  - **iPhone or iPad:** open **Settings**, tap your name, then tap **Subscriptions**.
+  - **Mac:** open the **App Store**, click your name at the bottom of the sidebar, click your name again, then click **Subscriptions**.
+- Payment will be charged to your Apple Account at confirmation of purchase, or at the end of the free trial period if a trial is offered and you do not cancel before it ends.
 
 ### Premium Lifetime (One-Time Purchase)
 
@@ -43,13 +45,14 @@ Good Spark offers two premium purchase options:
 | **Plan** | Premium Lifetime |
 | **Price** | $29.99 one-time payment |
 | **Duration** | Lifetime access — no subscription required |
-| **Billing** | Charged to your Apple ID account at confirmation of purchase |
+| **Billing** | Charged to your Apple Account at confirmation of purchase |
 
 - This is a one-time, non-recurring purchase. There are no auto-renewable subscription charges.
 - Once purchased, premium access is permanent and does not expire.
 
 ### General
 
+- Premium works on iPhone, iPad and Mac: buy it once and it unlocks the same content on each of your devices signed in with the same Apple Account.
 - All purchases are processed by Apple and subject to Apple's payment terms.
 - Prices are in USD and may vary by region. We may update pricing at any time. In-app purchase prices are set in App Store Connect and are controlled by Apple.
 
@@ -59,8 +62,8 @@ Good Spark offers two premium purchase options:
 
 Good Spark provides affirmation content organized into tone packs.
 
-- **Free Packs (4 packs, 40 affirmations):** Available to all users at no cost.
-- **Premium Packs (8+ packs, 160+ affirmations):** Require a Premium Annual subscription or Premium Lifetime purchase.
+- **Free Packs (4 packs, 120+ affirmations):** Available to all users at no cost, along with free seasonal packs while they are in season.
+- **Premium Packs (8 more packs, 400+ affirmations):** Require a Premium Annual subscription or Premium Lifetime purchase, as do Premium seasonal packs.
 
 Premium users also receive content updates and new packs as they are released.
 
@@ -72,7 +75,7 @@ We reserve the right to update, modify, or remove content at any time.
 
 Your privacy is important to us. Please review our [Privacy Policy](https://good-spark.com/privacy) for information on how we handle your data.
 
-**Summary:** Good Spark does not collect personal data. All preferences and history are stored locally on your device.
+**Summary:** Good Spark does not collect personal data. Your preferences, history, favorites and reflections are stored on your device and, if you use iCloud sync, in your own iCloud account. We never see them.
 
 ---
 
@@ -132,6 +135,6 @@ We typically respond within 24-48 hours.
 
 ---
 
-*Terms of Use Version: 1.0*
-*Effective Date: March 9, 2026*
-*Last Reviewed: March 9, 2026*
+*Terms of Use Version: 1.1*
+*Effective Date: November 24, 2026*
+*Last Reviewed: November 24, 2026*
