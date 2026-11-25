@@ -19,7 +19,7 @@ const locales = [
   "tr",
 ];
 
-const variants = ["overview", "live"];
+const variants = ["overview", "live", "reflect"];
 const appNames = {
   en: "Good Spark",
   ja: "こころの灯り",
@@ -82,11 +82,15 @@ async function writeManifest() {
       appName,
       overview: {
         path: `/promo/x/${locale}/overview.png`,
-        alt: `${appName}. ${messages["hero.title"]} ${messages["hero.available"]}. 460 ${affirmationMetric}; 22 ${messages["metric.languages"]}.`,
+        alt: `${appName}. ${messages["hero.title"]} ${messages["hero.available"]}. 660 ${affirmationMetric}; 22 ${messages["metric.languages"]}.`,
       },
       live: {
         path: `/promo/x/${locale}/live.png`,
         alt: `${appName}. ${messages["live.title"]} ${messages["live.lock.title"]}. ${messages["live.island.title"]}.`,
+      },
+      reflect: {
+        path: `/promo/x/${locale}/reflect.png`,
+        alt: `${appName}. ${messages["reflect.title"]} ${messages["reflect.scratch.title"]}, ${messages["reflect.print.title"]}, ${messages["reflect.help.title"]}. ${messages["sync.title"]}`,
       },
     };
   });

@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 export const baseMetadata: Metadata = {
   metadataBase: new URL("https://good-spark.com"),
   title: "Good Spark",
-  description: "Personal affirmations on iPhone, iPad, widgets, the Lock Screen, Dynamic Island, and the Mac menu bar. Live Spark keeps one thoughtful message close. Private by design and available in 22 languages.",
-  keywords: ["affirmations", "widgets", "menu bar", "motivation", "self-care", "iOS", "macOS", "wellness", "Live Spark", "Live Activities", "Dynamic Island", "Lock Screen"],
+  description: "Personal affirmations on iPhone, iPad, widgets, the Lock Screen, Dynamic Island, and the Mac menu bar. Scratch-off cards, reflections kept as instant prints, and history that syncs through your own iCloud. Private by design and available in 22 languages.",
+  keywords: ["affirmations", "widgets", "menu bar", "motivation", "self-care", "iOS", "macOS", "wellness", "Live Spark", "Live Activities", "Dynamic Island", "Lock Screen", "journal", "reflection", "scratch-off", "iCloud sync"],
   authors: [{ name: "Good Spark Team" }],
   icons: {
     icon: [

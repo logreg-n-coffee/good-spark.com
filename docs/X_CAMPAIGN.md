@@ -1,6 +1,6 @@
 # Good Spark X campaign
 
-Prepared August 24, 2026. These drafts use the current product facts: 460 affirmations, 22 languages, Mac/iPhone/iPad support, no account requirement, and no personal-data collection.
+Prepared August 24, 2026; updated November 22, 2026 for Good Spark 1.33. Current product facts: 660 affirmations, 22 languages, Mac/iPhone/iPad support, no account requirement, no personal-data collection, scratch-off cards and instant-print reflections on iPhone and iPad, writing help that runs on the device, and iCloud sync through the person's own iCloud. The August posts below mention 460 affirmations; use them only as history, not for new posts.
 
 ## Posting plan
 
@@ -15,26 +15,127 @@ Prepared August 24, 2026. These drafts use the current product facts: 460 affirm
 
 ## Promo assets
 
-Each priority language has two 1600×900 images rendered from the real localized product UI. Attach the overview image to the launch post. Use the Live Spark image for a separate feature follow-up or quote post so each 16:9 composition stays intact in the feed.
+Each priority language has three 1600×900 images rendered from the localized website scenes. Attach the overview image to the launch post. Use the Live Spark image and the rituals image (scratch-off, instant prints, writing help) for separate feature follow-ups or quote posts so each 16:9 composition stays intact in the feed.
 
 - [Overview contact sheet](../public/promo/x/contact-sheets/overview.png)
 - [Live Spark contact sheet](../public/promo/x/contact-sheets/live.png)
+- [Rituals contact sheet](../public/promo/x/contact-sheets/reflect.png)
 - [Localized alt-text manifest](../public/promo/x/manifest.json)
 
-| Language | Launch image | Live Spark follow-up |
-| --- | --- | --- |
-| English | [overview](../public/promo/x/en/overview.png) | [live](../public/promo/x/en/live.png) |
-| Japanese | [overview](../public/promo/x/ja/overview.png) | [live](../public/promo/x/ja/live.png) |
-| Spanish | [overview](../public/promo/x/es/overview.png) | [live](../public/promo/x/es/live.png) |
-| Portuguese — Brazil | [overview](../public/promo/x/pt-BR/overview.png) | [live](../public/promo/x/pt-BR/live.png) |
-| French | [overview](../public/promo/x/fr/overview.png) | [live](../public/promo/x/fr/live.png) |
-| German | [overview](../public/promo/x/de/overview.png) | [live](../public/promo/x/de/live.png) |
-| Korean | [overview](../public/promo/x/ko/overview.png) | [live](../public/promo/x/ko/live.png) |
-| Traditional Chinese | [overview](../public/promo/x/zh-Hant/overview.png) | [live](../public/promo/x/zh-Hant/live.png) |
-| Arabic | [overview](../public/promo/x/ar/overview.png) | [live](../public/promo/x/ar/live.png) |
-| Hindi | [overview](../public/promo/x/hi/overview.png) | [live](../public/promo/x/hi/live.png) |
-| Indonesian | [overview](../public/promo/x/id/overview.png) | [live](../public/promo/x/id/live.png) |
-| Turkish | [overview](../public/promo/x/tr/overview.png) | [live](../public/promo/x/tr/live.png) |
+| Language | Launch image | Live Spark follow-up | Rituals follow-up |
+| --- | --- | --- | --- |
+| English | [overview](../public/promo/x/en/overview.png) | [live](../public/promo/x/en/live.png) | [reflect](../public/promo/x/en/reflect.png) |
+| Japanese | [overview](../public/promo/x/ja/overview.png) | [live](../public/promo/x/ja/live.png) | [reflect](../public/promo/x/ja/reflect.png) |
+| Spanish | [overview](../public/promo/x/es/overview.png) | [live](../public/promo/x/es/live.png) | [reflect](../public/promo/x/es/reflect.png) |
+| Portuguese — Brazil | [overview](../public/promo/x/pt-BR/overview.png) | [live](../public/promo/x/pt-BR/live.png) | [reflect](../public/promo/x/pt-BR/reflect.png) |
+| French | [overview](../public/promo/x/fr/overview.png) | [live](../public/promo/x/fr/live.png) | [reflect](../public/promo/x/fr/reflect.png) |
+| German | [overview](../public/promo/x/de/overview.png) | [live](../public/promo/x/de/live.png) | [reflect](../public/promo/x/de/reflect.png) |
+| Korean | [overview](../public/promo/x/ko/overview.png) | [live](../public/promo/x/ko/live.png) | [reflect](../public/promo/x/ko/reflect.png) |
+| Traditional Chinese | [overview](../public/promo/x/zh-Hant/overview.png) | [live](../public/promo/x/zh-Hant/live.png) | [reflect](../public/promo/x/zh-Hant/reflect.png) |
+| Arabic | [overview](../public/promo/x/ar/overview.png) | [live](../public/promo/x/ar/live.png) | [reflect](../public/promo/x/ar/reflect.png) |
+| Hindi | [overview](../public/promo/x/hi/overview.png) | [live](../public/promo/x/hi/live.png) | [reflect](../public/promo/x/hi/reflect.png) |
+| Indonesian | [overview](../public/promo/x/id/overview.png) | [live](../public/promo/x/id/live.png) | [reflect](../public/promo/x/id/reflect.png) |
+| Turkish | [overview](../public/promo/x/tr/overview.png) | [live](../public/promo/x/tr/live.png) | [reflect](../public/promo/x/tr/reflect.png) |
+
+## Rituals and iCloud sync wave (Good Spark 1.33)
+
+Post these once 1.33 is on the App Store, each with its localized `reflect.png`. Lengths are checked against X's weighted 280-character count (URLs count as 23, CJK characters as 2).
+
+### English
+
+```text
+Make a moment of it. ✨ Good Spark now has scratch-off cards, reflections you keep as instant prints, a new question every day, and writing help that runs on your device. History, favorites and reflections sync through your own iCloud.
+
+https://good-spark.com/
+```
+
+### Japanese
+
+```text
+ひとときを、かたちに。✨ こころの灯りに、スクラッチカード、インスタントプリントで残す振り返り、毎日変わる問いかけ、端末内で動く書き出しのヒントが加わりました。履歴・お気に入り・振り返りはあなたのiCloudで同期されます。
+
+https://good-spark.com/ja
+```
+
+### Spanish
+
+```text
+Dale a cada día su momento. ✨ Buena Chispa estrena tarjetas para raspar, reflexiones en foto instantánea, una pregunta nueva cada día y ayuda para escribir que funciona en tu dispositivo. Historial, favoritos y reflexiones se sincronizan con tu iCloud.
+
+https://good-spark.com/es
+```
+
+### Portuguese — Brazil
+
+```text
+Transforme isso num momento. ✨ A Pequena Faísca agora tem cartões raspadinha, reflexões guardadas como fotos instantâneas, uma pergunta nova por dia e ajuda para escrever que roda no aparelho. Histórico, favoritas e reflexões sincronizam pelo seu iCloud.
+
+https://good-spark.com/pt-BR
+```
+
+### French
+
+```text
+Fais-en un moment à toi. ✨ Petite Étincelle propose des cartes à gratter, des réflexions en tirage instantané, une nouvelle question chaque jour et une aide à l’écriture sur l’appareil. Historique, favoris et réflexions se synchronisent via ton iCloud.
+
+https://good-spark.com/fr
+```
+
+### German
+
+```text
+Mach einen besonderen Moment daraus. ✨ „Zuversicht“ hat jetzt Rubbelkarten, Reflexionen als Sofortbilder, jeden Tag eine neue Frage und Schreibhilfe direkt auf dem Gerät. Verlauf, Favoriten und Reflexionen synchronisieren über deine eigene iCloud.
+
+https://good-spark.com/de
+```
+
+### Korean
+
+```text
+그 순간을 남겨 보세요. ✨ 작은 빛에 스크래치 카드, 즉석 사진으로 남기는 마음 노트, 매일 바뀌는 질문, 기기 안에서 작동하는 글쓰기 도움이 생겼어요. 기록, 즐겨찾기, 마음 노트는 나의 iCloud로 동기화돼요.
+
+https://good-spark.com/ko
+```
+
+### Traditional Chinese
+
+```text
+把這一刻留下來。✨ 點點微光新增刮刮卡、存成即印相片的心得、每天一個新問題，以及在裝置上完成的寫作協助。紀錄、最愛和心得透過你自己的 iCloud 同步。
+
+https://good-spark.com/zh-Hant
+```
+
+### Arabic
+
+```text
+لحظة تستحق أن تبقى. ✨ في شرارة أمل الآن بطاقات الكشط، وخواطر تُحفظ في صور فورية، وسؤال جديد كل يوم، ومساعدة في الكتابة تعمل على الجهاز نفسه. ويتزامن السجل والمفضلة والخواطر عبر حساب iCloud الخاص بك.
+
+https://good-spark.com/ar
+```
+
+### Hindi
+
+```text
+इस पल को ख़ास बनाइए। ✨ नई किरण में अब स्क्रैच कार्ड, इंस्टेंट प्रिंट की तरह सहेजे जाने वाले चिंतन, हर दिन नया सवाल और डिवाइस पर ही लिखने में मदद है। इतिहास, पसंदीदा और चिंतन आपके अपने iCloud से सिंक होते हैं।
+
+https://good-spark.com/hi
+```
+
+### Indonesian
+
+```text
+Jadikan momen yang berarti. ✨ Cahaya Hati kini punya kartu gosok, refleksi yang disimpan sebagai cetakan instan, pertanyaan baru setiap hari, dan bantuan menulis di perangkat. Riwayat, favorit, dan refleksi tersinkron lewat iCloud milikmu.
+
+https://good-spark.com/id
+```
+
+### Turkish
+
+```text
+Güne küçük bir an kat. ✨ Umut Işığı’nda artık kazımalı kartlar, anlık baskı olarak saklanan düşünceler, her gün yeni bir soru ve cihazda çalışan yazma yardımı var. Geçmiş, favoriler ve düşünceler kendi iCloud’un üzerinden eşzamanlanır.
+
+https://good-spark.com/tr
+```
 
 ## Priority wave
 

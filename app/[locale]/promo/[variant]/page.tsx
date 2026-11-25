@@ -26,7 +26,7 @@ const PROMO_LOCALES = [
   "tr",
 ] as const satisfies readonly Locale[];
 
-const PROMO_VARIANTS = ["overview", "live"] as const;
+const PROMO_VARIANTS = ["overview", "live", "reflect"] as const;
 
 type PromoLocale = (typeof PROMO_LOCALES)[number];
 type PromoVariant = (typeof PROMO_VARIANTS)[number];
@@ -82,7 +82,7 @@ function OverviewCard({ locale }: { locale: PromoLocale }) {
   const tonePacks = getTonePacks(locale);
   const localeMeta = getLocaleMeta(locale);
   const affirmationMetric = getAffirmationMetric(locale);
-  const ariaLabel = `${messages["app.name"]}. ${messages["hero.title"]} ${messages["hero.available"]}. 460 ${affirmationMetric}; 22 ${messages["metric.languages"]}.`;
+  const ariaLabel = `${messages["app.name"]}. ${messages["hero.title"]} ${messages["hero.available"]}. 660 ${affirmationMetric}; 22 ${messages["metric.languages"]}.`;
 
   return (
     <main
@@ -101,7 +101,7 @@ function OverviewCard({ locale }: { locale: PromoLocale }) {
           <h1 className={styles.headline}>{messages["hero.title"]}</h1>
           <p className={styles.tagline}>{messages["footer.tagline"]}</p>
           <div className={styles.proofRow}>
-            <div><strong><bdi>460</bdi></strong><span>{affirmationMetric}</span></div>
+            <div><strong><bdi>660</bdi></strong><span>{affirmationMetric}</span></div>
             <div><strong><bdi>22</bdi></strong><span>{messages["metric.languages"]}</span></div>
             <div><strong>{messages["metric.no"]}</strong><span>{messages["metric.noAccount"]}</span></div>
           </div>
@@ -165,11 +165,61 @@ function LiveCard({ locale }: { locale: PromoLocale }) {
   );
 }
 
+function ReflectCard({ locale }: { locale: PromoLocale }) {
+  const messages = getMessages(locale);
+  const tonePacks = getTonePacks(locale);
+  const localeMeta = getLocaleMeta(locale);
+  const ariaLabel = `${messages["app.name"]}. ${messages["reflect.title"]} ${messages["reflect.available"]}. ${messages["reflect.scratch.title"]}, ${messages["reflect.print.title"]}, ${messages["reflect.help.title"]}. ${messages["sync.title"]}`;
+
+  return (
+    <main
+      className={`${styles.canvas} ${styles.reflect}`}
+      data-promo-canvas
+      data-locale={locale}
+      lang={locale}
+      dir={localeMeta.direction}
+      aria-label={ariaLabel}
+    >
+      <div className={styles.overviewGlow} aria-hidden="true" />
+      <div className={styles.reflectGrid}>
+        <section className={styles.copy}>
+          <Brand locale={locale} />
+          <p className={`${styles.available} ${styles.reflectAvailable}`}><span aria-hidden="true">✶</span>{messages["reflect.available"]}</p>
+          <h1 className={styles.headline}>{messages["reflect.title"]}</h1>
+          <p className={styles.tagline}>{messages["reflect.body"]}</p>
+          <div className={`${styles.privacyChips} ${styles.reflectChips}`}>
+            <span><b aria-hidden="true">✓</b>{messages["privacy.bullet.iCloud"]}</span>
+            <span><b aria-hidden="true">✓</b>{messages["privacy.bullet.onDeviceAI"]}</span>
+          </div>
+          <div className={styles.ctaRow}>
+            <span className={styles.cta}>{messages["hero.download"]}<b aria-hidden="true">↗</b></span>
+            <small>good-spark.com</small>
+          </div>
+        </section>
+        <section className={styles.reflectVisual} aria-label={messages["aria.preview"]}>
+          <div className={`${styles.reflectScene} ${styles.reflectScratch}`}>
+            <ProductScene kind="scratch" messages={messages} tonePacks={tonePacks} />
+            <strong>{messages["reflect.scratch.title"]}</strong>
+          </div>
+          <div className={`${styles.reflectScene} ${styles.reflectPrint}`}>
+            <ProductScene kind="print" messages={messages} tonePacks={tonePacks} />
+            <strong>{messages["reflect.print.title"]}</strong>
+          </div>
+          <div className={`${styles.reflectScene} ${styles.reflectComposer}`}>
+            <ProductScene kind="composer" messages={messages} tonePacks={tonePacks} />
+            <strong>{messages["reflect.help.title"]}</strong>
+          </div>
+        </section>
+      </div>
+    </main>
+  );
+}
+
 export default async function PromoPage({ params }: PromoPageProps) {
   const { locale: localeValue, variant: variantValue } = await params;
   if (!isPromoLocale(localeValue) || !isPromoVariant(variantValue)) notFound();
 
-  return variantValue === "overview"
-    ? <OverviewCard locale={localeValue} />
-    : <LiveCard locale={localeValue} />;
+  if (variantValue === "overview") return <OverviewCard locale={localeValue} />;
+  if (variantValue === "live") return <LiveCard locale={localeValue} />;
+  return <ReflectCard locale={localeValue} />;
 }

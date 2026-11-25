@@ -30,9 +30,21 @@ const sceneMessageKeys = [
   "scene.morePacks", "scene.probability", "scene.notifications", "scene.launch",
   "scene.history.title", "scene.all", "scene.favorites", "scene.clear", "scene.next",
   "scene.live.active", "scene.live.end",
+  "scene.scratch", "scene.reveal", "scene.print", "scene.develop", "scene.reflection", "scene.prompt",
+  "scene.newPrompt", "scene.placeholder", "scene.speak", "scene.ideas", "scene.keepGoing", "scene.sync",
+  "scene.historyShort",
 ];
 
-const sceneKinds = ["popover", "welcome", "settings", "history", "lock-screen", "dynamic-island"];
+// Rituals, reflections and iCloud sync: localized everywhere, never left in English.
+const releaseFeatureKeys = [
+  "nav.reflect", "reflect.eyebrow", "reflect.available", "reflect.title", "reflect.body",
+  "reflect.scratch.title", "reflect.scratch.body", "reflect.print.title", "reflect.print.body",
+  "reflect.help.title", "reflect.help.body", "sync.eyebrow", "sync.title", "sync.body",
+  "sync.fresh.title", "sync.fresh.body", "sync.private.title", "sync.private.body",
+  "privacy.bullet.iCloud", "privacy.bullet.onDeviceAI",
+];
+
+const sceneKinds = ["popover", "welcome", "settings", "history", "lock-screen", "dynamic-island", "scratch", "print", "composer", "sync"];
 const releaseCopyKeys = ["live.available", "live.body", "live.lock.body", "live.island.body", "live.note"];
 const availabilityMarkers = {
   en: /available/i,
@@ -80,7 +92,17 @@ for (const locale of canonicalLocales) {
     if (messages[locale][key] !== messages.en[key]) localizedSceneValues += 1;
   }
 
+  // History, favorites and reflections can sync: the privacy copy must say where they go.
+  assert.match(messages[locale]["privacy.body"], /iCloud/, `${locale}.privacy.body must mention iCloud sync`);
+  assert.match(messages[locale]["sync.body"], /iCloud/, `${locale}.sync.body must say sync goes through iCloud`);
+  assert.match(messages[locale]["reflect.help.body"], /Apple Intelligence/, `${locale}.reflect.help.body must name Apple Intelligence`);
+  const eyebrows = ["why", "gallery", "reflect", "sync", "packs", "live", "privacy"].map((section) => messages[locale][`${section}.eyebrow`].slice(0, 2));
+  assert.deepEqual(eyebrows, ["01", "02", "03", "04", "05", "06", "07"], `${locale} section eyebrows must be numbered in page order`);
+
   if (locale !== "en") {
+    for (const key of releaseFeatureKeys) {
+      assert.notEqual(messages[locale][key], messages.en[key], `${locale}.${key} must be localized`);
+    }
     assert.ok(localizedSceneValues >= 20, `${locale} must localize the product-scene copy rather than silently falling back to English`);
     assert.notEqual(messages[locale]["live.available"], messages.en["live.available"], `${locale}.live.available must be localized`);
   }
@@ -95,7 +117,7 @@ assert.match(messages.en["live.available"], /available now on iPhone/i, "the Eng
 assert.ok(!futureEnglishReleaseClaim.test(englishReleaseCopy), "English Live Spark release copy must not retain preview or future-tense claims");
 assert.ok(homeSource.includes('messages["live.available"]'), "HomePage must render the released Live Spark availability label");
 assert.ok(!homeSource.includes('messages["live.upcoming"]'), "HomePage must not render the pre-release Live Spark label");
-assert.match(localizedHomeSource, /softwareVersion: "1\.26\.0"/, "localized structured data must advertise the released app version");
+assert.match(localizedHomeSource, /softwareVersion: "1\.33\.0"/, "localized structured data must advertise the released app version");
 assert.ok(!futureEnglishReleaseClaim.test(siteShellSource), "metadata must not retain preview or future-tense Live Spark claims");
 
 const localizedAppNames = [...i18nSource.matchAll(/appName: "([^"]+)"/g)].map((match) => match[1]);
@@ -124,4 +146,4 @@ for (const kind of sceneKinds) {
 assert.ok(!sceneSource.includes("/screenshots/"), "localized product scenes must not use English-baked screenshots");
 assert.ok(!timerClaim.test(sceneSource), "product scenes must not render a Live Spark countdown");
 
-console.log(`Validated ${canonicalLocales.length} locales, ${englishKeys.length} messages each, ${sceneKinds.length} localized product scenes, and release metadata for app 1.26.0.`);
+console.log(`Validated ${canonicalLocales.length} locales, ${englishKeys.length} messages each, ${sceneKinds.length} localized product scenes, and release metadata for app 1.33.0.`);

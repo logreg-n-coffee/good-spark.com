@@ -38,7 +38,8 @@
 }
 
 .overviewGrid,
-.liveGrid {
+.liveGrid,
+.reflectGrid {
   position: absolute;
   inset: 72px 96px;
   display: grid;
@@ -468,4 +469,82 @@
 .canvas:lang(ko) .brand strong,
 .canvas:lang(zh-Hant) .brand strong {
   letter-spacing: 0;
+}
+
+.reflect {
+  background:
+    radial-gradient(circle at 74% 22%, #f9b99f 0, transparent 30%),
+    linear-gradient(125deg, #fbf8f2 31%, #ecd7e9 100%);
+}
+
+.reflectAvailable {
+  border-color: #8730a133;
+  background: #ffffffa8;
+  color: #6d287f;
+}
+
+.reflectChips span {
+  border-color: #5d257526;
+  background: #ffffff87;
+  color: #21142d;
+}
+
+.reflectVisual {
+  position: relative;
+  width: 700px;
+  height: 756px;
+}
+
+.reflectScene {
+  position: absolute;
+  width: 300px;
+}
+
+.reflectScene :global(.product-scene) {
+  width: 300px;
+  aspect-ratio: 4 / 5;
+  box-shadow: 0 34px 72px #34172c4d;
+}
+
+.reflectScene :global(.scene-phone-shell) {
+  width: 62%;
+}
+
+.reflectScene > strong {
+  display: block;
+  margin-top: 18px;
+  overflow: hidden;
+  color: #21142d;
+  font-size: 17px;
+  font-weight: 820;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.reflectScratch {
+  z-index: 1;
+  top: 96px;
+  left: 0;
+  transform: rotate(-5deg);
+}
+
+.reflectPrint {
+  z-index: 2;
+  top: 20px;
+  left: 205px;
+}
+
+.reflectComposer {
+  z-index: 3;
+  top: 136px;
+  left: 410px;
+  transform: rotate(5deg);
+}
+
+/* The composer card overlaps the print's right side: keep its label clear of it. */
+.reflectPrint > strong {
+  max-width: 205px;
+  padding-left: 10px;
+  text-align: left;
 }
